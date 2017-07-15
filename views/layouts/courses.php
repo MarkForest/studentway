@@ -45,11 +45,11 @@ AppAsset::register($this);
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#" data-nav-section="home"><span>Головна</span></a></li>
                         <li><a href="#" data-nav-section="explore"><span>Переваги</span></a></li>
-                        <li><a href="#" data-nav-section="testimony"><span>Testimony</span></a></li>
-                        <li><a href="#" data-nav-section="pricing"><span>Pricing</span></a></li>
-                        <li><a href="#" data-nav-section="services"><span>Services</span></a></li>
-                        <li><a href="#" data-nav-section="team"><span>Team</span></a></li>
-                        <li><a href="#" data-nav-section="faq"><span>FAQ</span></a></li>
+                        <li><a href="#" data-nav-section="testimony"><span>Отзывы</span></a></li>
+                        <li><a href="#" data-nav-section="pricing"><span>Ціни</span></a></li>
+                        <li><a href="#" data-nav-section="services"><span>Послуги</span></a></li>
+                        <li><a href="#" data-nav-section="team"><span>Наші спеціолісти</span></a></li>
+                        <li><a href="#" data-nav-section="faq"><span>Питання</span></a></li>
                         <li class="call-to-action"><a href="#"><span>Sign up free</span></a></li>
                     </ul>
                 </div>

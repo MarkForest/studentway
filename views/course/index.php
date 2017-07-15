@@ -168,17 +168,25 @@
                         <div class="price-box to-animate-2">
                             <h2 class="pricing-plan">Базовий</h2>
                             <div class="price"><sup class="currency">Грн</sup>650<small>/месяц</small></div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                            <ul>
+                                <li><p><i class="icon-check2"></i>Польський для абітурієнтів вступників в приватні або державні вузи.</p></li>
+                                <li><p><i class="icon-check2"></i>1 рік. Гарантований рівень В1.</p></li>
+                                <li><p><i class="icon-check2"></i>2 заняття в тиждень по 90 хв. Графік: 16:00 - 17:30 або 18:00 - 19:30.</p></li>
+                            </ul>
+<!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="price-box to-animate-2">
                             <h2 class="pricing-plan">Розширений</h2>
-                            <div class="price"><sup class="currency">$</sup>27<small>/month</small></div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                            <div class="price"><sup class="currency">Грн</sup>650<small>/month</small></div>
+                            <ul>
+                                <li><p><i class="icon-check2"></i>Польський для абітурієнтів вступників в державні вузи, на безкоштовні програми</p></li>
+                                <li><p><i class="icon-check2"></i>2 роки. Гарантований рівень В2.</p></li>
+                                <li><p><i class="icon-check2"></i>2 заняття в тиждень по 90 хв. Графік: 16:00 - 17:30 або 18:00 - 19:30.</p></li>
+                            </ul>
+<!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
                         </div>
                     </div>
 
@@ -186,8 +194,13 @@
                         <div class="price-box to-animate-2 popular">
                             <h2 class="pricing-plan pricing-plan-offer">Базовий <span>Best Offer</span></h2>
                             <div class="price"><sup class="currency">$</sup>74<small>/month</small></div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                            <ul>
+                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
+                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
+                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
+                            </ul>
+                            <p> </p>
+<!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
                         </div>
                     </div>
 
@@ -195,18 +208,22 @@
                         <div class="price-box to-animate-2">
                             <h2 class="pricing-plan">Розширений</h2>
                             <div class="price"><sup class="currency">$</sup>140<small>/month</small></div>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>
+                            <ul>
+                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
+                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
+                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
+                            </ul>
+<!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 to-animate">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <a href="#">Learn More</a></p>
-                </div>
-            </div>
+<!--            <div class="row">-->
+<!--                <div class="col-md-6 col-md-offset-3 to-animate">-->
+<!--                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <a href="#">Learn More</a></p>-->
+<!--                </div>-->
+<!--            </div>-->
 
         </div>
     </div>
@@ -217,10 +234,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">We Offer Services</h2>
+                    <h2 class="to-animate">Ми пропонуємо послуги</h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove. </h3>
+                            <h3 class="to-animate">Наше завдання полягає в тому, щоб ви вивчили польську мову на відмінно. З цим завданням ми успішно справляємося. </h3>
                         </div>
                     </div>
                 </div>
@@ -228,57 +245,57 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="box-services">
-                        <i class="icon-chemistry to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Hand-crafted with Detailed</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.</p>
-                        </div>
-                    </div>
-
-                    <div class="box-services">
-                        <i class="icon-energy to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Light and Fast</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box-services">
-                        <i class="icon-trophy to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Award-winning Landing Page</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.</p>
-                        </div>
-                    </div>
-
-                    <div class="box-services">
-                        <i class="icon-paper-plane to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Sleek and Smooth Animation</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box-services">
                         <i class="icon-people to-animate-2"></i>
                         <div class="fh5co-post to-animate">
-                            <h3>Satisfied &amp; Happy Clients</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.</p>
+                            <h3>Викладачі</h3>
+                            <p>Солідний досвід наших викладачів (так, у нас працюють не вчорашні випускники польських університетів, а викладачі з солідним досвідом).</p>
                         </div>
                     </div>
 
                     <div class="box-services">
-                        <i class="icon-screen-desktop to-animate-2"></i>
+                        <i class="icon-rocket to-animate-2"></i>
                         <div class="fh5co-post to-animate">
-                            <h3>Looks Amazing on Devices</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.</p>
+                            <h3>Заходы</h3>
+                            <p>Проведення клубів розмовної польської мови (для можливості практикуватися в усному мовленні). Проведення інтерактивних заходів, присвячених знаменним подіям або польським святам.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-services">
+                        <i class="icon-layers2 to-animate-2"></i>
+                        <div class="fh5co-post to-animate">
+                            <h3>Методика</h3>
+                            <p>Унікальна методика викладання (розробки наших викладачів). Використання в процесі навчання підручників різних авторів (що дозволяє робити матеріал більш різноманітним).</p>
+                        </div>
+                    </div>
+
+                    <div class="box-services">
+                        <i class="icon-file-excel-o to-animate-2"></i>
+                        <div class="fh5co-post to-animate">
+                            <h3>Граматика</h3>
+                            <p>Максимальне занурення у вивчення граматики (це важливо, тому що студенти навчатимуться на польською мовою і здавати заліки та іспити; безграмотні фахівці навряд чи будуть затребувані).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-services">
+                        <i class="icon-book to-animate-2"></i>
+                        <div class="fh5co-post to-animate">
+                            <h3>Ресурси</h3>
+                            <p>Доступ учнів до бібліотеки польських книг і видань. Унікальна колекція фільмів і аудіо матеріалів польською мовою, які надаються нашим учням абсолютно безкоштовно.</p>
+                        </div>
+                    </div>
+
+                    <div class="box-services">
+                        <i class="icon-upload to-animate-2"></i>
+                        <div class="fh5co-post to-animate">
+                            <h3>Додатково</h3>
+                            <p>Використання мультимедійного обладнання під час занять (аудіо та відео супровід кожного заняття). Додаткові безкоштовні заняття, в т.ч. і по спецпредметам (фізика, хімія, математика, історія, географія та ін.).</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="call-to-action text-center to-animate"><a href="#" class="btn btn-learn">Learn More</a></div>
+<!--            <div class="call-to-action text-center to-animate"><a href="#" class="btn btn-learn">Learn More</a></div>-->
         </div>
     </div>
 </section>

@@ -9,6 +9,7 @@ $config = [
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
+            'baseUrl'=>"",
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'R1WFFpMjKHMnuJ3F59B8X8VWUq6BKu8C',
         ],

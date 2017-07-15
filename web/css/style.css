@@ -389,6 +389,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.fh5co-explore{
+  padding-bottom: 30px;
+}
 .fh5co-explore img{
   box-shadow: 7px 7px 29px rgba(0,0,0,0.7);
 }
@@ -428,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 50px 0 0 0;
   padding: 0;
 }
-.mt .list-nav li {
+.mt .list-nav li{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -576,14 +579,28 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-pricing {
   padding: 4em 0 6em 0;
   background: #f1faff;
+  padding-bottom: 30px;
 }
+
+.fh5co-pricing ul{
+  padding-left: 0px;
+}
+.fh5co-pricing ul li{
+  list-style: none;
+}
+
+.fh5co-pricing ul li i{
+  margin-right: 10px;
+  color:#1fb5f6;
+}
+
 .fh5co-pricing .pricing {
   display: block;
   float: left;
   margin-bottom: 30px;
 }
 .fh5co-pricing .price-box {
-  text-align: center;
+  /*text-align: center;*/
   padding: 30px;
   background: #fff;
   -webkit-border-radius: 5px;
