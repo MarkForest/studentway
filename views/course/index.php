@@ -61,21 +61,21 @@
         <div class="bg-text">
         <div class="container">
             <div class="row">
-<!--                <div class="col-md-8 to-animate-3">-->
-<!--                    <img class="img-responsive" src="/images/explore_2.jpg" alt="work">-->
-<!--                </div>-->
-                <div class="col-md-12 to-animate-3">
+                <div class="col-md-8 to-animate-3">
+                    <img class="img-responsive" src="/images/work_2.jpg" alt="work">
+                </div>
+                <div class="col-md-4 to-animate-3">
                     <div class="mt">
-                        <div class="col-md-4">
+                        <div class="">
                             <h4><i class="icon-people"></i>Гарантуємо 100%-у якість навчання</h4>
                             <p>Якщо ви не досягнете запланованого програмою курсу рівня знань і навичок, Ви зможемо безкоштовно повторити курс. У разі недостатнього засвоєння навчального матеріалу Ви можете пройти повторне навчання, якщо з вашого боку були виконані всі умови відвідувань занять і виконання завдань. </p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="">
 
                             <h4><i class="icon-shield"></i>Гарантуємо повний контроль процесу</h4>
                             <p>Наше завдання в тому, що б Ви були впевнені в кожній своїй дії в процесі навчання, опанували навичками розуміння і мовлення під керівництвом досвідченого викладача.</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="">
                             <h4><i class="icon-video2"></i>Гарантуємо вільний доступ до бібліотеки</h4>
                             <p> Безкоштовних видеоуроків, аудіокурсів, тренажоров. Учень може формувати самостійно додаткові заняття по темі яка Вас цікавить. (Математика, хімія, фізика, менеджмент та ін.).</p>
                         </div>
@@ -95,12 +95,23 @@
                         <div class="item">
                             <div class="testimony-slide active text-center">
                                 <figure>
+                                    <img src="/images/person.jpg" alt="user">
+                                </figure>
+                                <blockquote>
+                                    <p>"Велике спасибі за надану можливість познайомитися з командою польської мови. Кваліфіковані викладачі, які протягом тривалого часу навчання допомогли мені поліпшити іноземну мову. Практичні завдання, уроки, лекції, кіно кожен день збільшувала свій словниковий запас. Раджу всім працювати з вами!"</p>
+                                </blockquote>
+                                <span>Юліанна Мицик</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-slide active text-center">
+                                <figure>
                                     <img src="/images/person2.jpg" alt="user">
                                 </figure>
                                 <blockquote>
-                                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                    <p>"Мені дуже подобаються заняття, спасибі за таку велику перспективу навчання в Польщі. Я дуже задоволена навчанням."</p>
                                 </blockquote>
-                                <span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+                                <span>Катя Ярошенко</span>
                             </div>
                         </div>
                         <div class="item">
@@ -109,20 +120,10 @@
                                     <img src="/images/person3.jpg" alt="user">
                                 </figure>
                                 <blockquote>
-                                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+                                    <p>"Дуже доступні і добре структуровані заняття з польської мови.
+                                        Подобається уроки "Починаємо говорити по польськи" - повторювати текст досить просто і непомітно запам'ятовуєш необхідні слова і вирази. Бонус - з'являються цікаві фільми на польському)."</p>
                                 </blockquote>
-                                <span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-slide active text-center">
-                                <figure>
-                                    <img src="/images/person2.jpg" alt="user">
-                                </figure>
-                                <blockquote>
-                                    <p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-                                </blockquote>
-                                <span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+                                <span>Тетяна Полонська</span>
                             </div>
                         </div>
                     </div>
@@ -305,10 +306,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Meet The Team</h2>
+                    <h2 class="to-animate">Знайомтеся з командою</h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove. </h3>
+                            <h3 class="to-animate">Наші викладачі знають всі особливості викладання польської для успішного старту в вищих навчальних закладах Польщі. </h3>
                         </div>
                     </div>
                 </div>
@@ -416,43 +417,153 @@
 
 <hr>
 
-<section id="fh5co-trusted" data-section="trusted">
+<section id="fh5co-trusted" data-section="trusted" class="hidden-xs">
     <div class="fh5co-trusted">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Trusted By</h2>
+                    <h2 class="to-animate">Наші партнери</h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">We’re trusted by these popular companies</h3>
+                            <h3 class="to-animate">Нам довіряють ці популярні компанії</h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 col-sm-3 col-xs-6 col-sm-offset-0 col-md-offset-1">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                     <div class="partner-logo to-animate-2">
-                        <img src="/images/logo1.png" alt="Partners" class="img-responsive">
+                        <img src="/images/logos/swps_logo.jpg" alt="Partners" class="img-responsive">
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                     <div class="partner-logo to-animate-2">
-                        <img src="/images/logo2.png" alt="Partners" class="img-responsive">
+                        <img src="/images/logos/Pwr_poziom_pl.png" alt="Partners" class="img-responsive">
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                     <div class="partner-logo to-animate-2">
-                        <img src="/images/logo3.png" alt="Partners" class="img-responsive">
+                        <img src="/images/logos/politechnika1.png" alt="Partners" class="img-responsive">
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-3 col-xs-6">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                     <div class="partner-logo to-animate-2">
-                        <img src="/images/logo4.png" alt="Partners" class="img-responsive">
+                        <img src="/images/logos/Politech.png" alt="Partners" class="img-responsive">
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-sm-2 col-xs-2">
                     <div class="partner-logo to-animate-2">
-                        <img src="/images/logo5.png" alt="Partners" class="img-responsive">
+                        <img src="/images/logos/pjalogo.jpg" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/PGdansk.gif" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/ok_uw.jpg" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/lublin11.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/LogoUO light-1.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logoumfc.jpg" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo20.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo16.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo17.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo13.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo10.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo8.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo5.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo4.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo3.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo2(3).png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo2(2).png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo2.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo1(2).png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/logo1.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/images.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/ahe.png" alt="Partners" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <div class="partner-logo to-animate-2">
+                        <img src="/images/logos/1337025811.jpg" alt="Partners" class="img-responsive">
                     </div>
                 </div>
             </div>

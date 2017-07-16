@@ -16,7 +16,6 @@ body {
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
-  color: #666666;
   color: #7f7f7f;
   background: #fff;
   height: 100%;
@@ -272,14 +271,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-home {
-  background-image: url(../images/full_image_3.jpg);
+  background-image: url(../images/explore_2.jpg);
   background-repeat: no-repeat;
-  background-color: transparent;
+  /*background-color: transparent;*/
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   width: 100%;
-  background-color: #9fa3a5;
+  /*background-color: #9fa3a5;*/
   color: #fff;
 }
 #fh5co-home a {
@@ -297,10 +296,10 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   z-index: 2;
-  background: rgba(0,0,0, 0.3);
+  background: rgba(0,0,0, 0.4);
 }
 #fh5co-home, #fh5co-home .text-wrap {
-  height:600px;
+  height:700px;
 }
 #fh5co-home .text-wrap {
   display: table;
@@ -392,17 +391,14 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-explore{
   padding-bottom: 30px;
 }
-.fh5co-explore img{
-  box-shadow: 7px 7px 29px rgba(0,0,0,0.7);
-}
 
 .fh5co-explore-bg-color {
   width: 100%;
   background: #f1f1f1;
   margin-bottom: 0;
   /*background: url("../images/explore_2.jpg") no-repeat;*/
-  background-attachment: fixed;
-  background-size: cover;
+  /*background-attachment: fixed;*/
+  /*background-size: cover;*/
 }
 
 .bg-text{
@@ -411,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mt {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .mt h4 {
   position: relative;
@@ -770,14 +766,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .partner-logo {
-  margin-bottom: 30px;
-  float: left;
-  width: 100%;
-  vertical-align: middle;
+  width: 80%;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
+  height: 40px;
+  margin-bottom: 100px;
 }
 
 .section-heading {

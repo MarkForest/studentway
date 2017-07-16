@@ -45,7 +45,7 @@ AppAsset::register($this);
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#" data-nav-section="home"><span>Головна</span></a></li>
                         <li><a href="#" data-nav-section="explore"><span>Переваги</span></a></li>
-                        <li><a href="#" data-nav-section="testimony"><span>Отзывы</span></a></li>
+                        <li><a href="#" data-nav-section="testimony"><span>Відгуки</span></a></li>
                         <li><a href="#" data-nav-section="pricing"><span>Ціни</span></a></li>
                         <li><a href="#" data-nav-section="services"><span>Послуги</span></a></li>
                         <li><a href="#" data-nav-section="team"><span>Наші спеціолісти</span></a></li>
@@ -64,23 +64,21 @@ AppAsset::register($this);
         <div class="container">
             <div class="row">
                 <div class="col-md-4 to-animate">
-                    <h3 class="section-title">About Us</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-                    <p class="copy-right">&copy; 2015 Union Free Template. <br>All Rights Reserved. <br>
-                        Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a>
-                        Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a> &amp; Dribbble Image by <a href="https://dribbble.com/tibi_neamu" target="_blank">Tiberiu</a>
+                    <h3 class="section-title">Про нас</h3>
+                    <p>Наші викладачі знають всі особливості викладання польської для успішного старту в вищих навчальних закладах Польщі.</p>
+                    <p class="copy-right">&copy; 2017 Studentway® Курси для абітурієнтів. <br>Всі права захищені.<br>
                     </p>
                 </div>
 
                 <div class="col-md-4 to-animate">
-                    <h3 class="section-title">Our Address</h3>
+                    <h3 class="section-title">Наша адреса</h3>
                     <ul class="contact-info">
-                        <li><i class="icon-map-marker"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
-                        <li><i class="icon-phone"></i>+ 1235 2355 98</li>
-                        <li><i class="icon-envelope"></i><a href="#">info@yoursite.com</a></li>
-                        <li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
+                        <li><i class="icon-map-marker"></i>49050, м Дніпро, пр-т Гагаріна, 115, офіс 43, офіс 25 - курси польської мови</li>
+                        <li><i class="icon-phone"></i>+38 096 814 11 32</li>
+                        <li><i class="icon-envelope"></i><a href="#">edu10@i.ua</a></li>
+                        <li><i class="icon-globe2"></i><a href="#">www.studentway.org.ua</a></li>
                     </ul>
-                    <h3 class="section-title">Connect with Us</h3>
+                    <h3 class="section-title">Зв'яжіться з нами</h3>
                     <ul class="social-media">
                         <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
                         <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
@@ -89,22 +87,22 @@ AppAsset::register($this);
                     </ul>
                 </div>
                 <div class="col-md-4 to-animate">
-                    <h3 class="section-title">Drop us a line</h3>
+                    <h3 class="section-title">Залиште нам повідомлення</h3>
                     <form class="contact-form">
                         <div class="form-group">
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="name" class="form-control" id="name" placeholder="Name">
+                            <label for="name" class="sr-only">ім'я</label>
+                            <input type="name" class="form-control" id="name" placeholder="ім'я">
                         </div>
                         <div class="form-group">
                             <label for="email" class="sr-only">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <label for="message" class="sr-only">Message</label>
-                            <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+                            <label for="message" class="sr-only">Повідомлення</label>
+                            <textarea class="form-control" id="message" rows="7" placeholder="Повідомлення"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
+                            <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Відправити повідомлення">
                         </div>
                     </form>
                 </div>
@@ -112,7 +110,7 @@ AppAsset::register($this);
         </div>
     </div>
 
-    <div id="map" class="fh5co-map"></div>
+    <div id="" class="fh5co-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1574.1825648634465!2d35.03735268163897!3d48.428722650805504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbfcb347737be1%3A0x15519dc76710d6cc!2z0L_RgNC-0YHQv9C10LrRgiDQk9Cw0LPQsNGA0ZbQvdCwLCAxMTUsINCU0L3RltC_0YDQvsyBLCDQlNC90ZbQv9GA0L7Qv9C10YLRgNC-0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1500180526149" width="100%" height="450" frameborder="0" style="border:20px" allowfullscreen></iframe></div>
 
 <!--    <div class="container">-->
 <!--        --><?//= Breadcrumbs::widget([
