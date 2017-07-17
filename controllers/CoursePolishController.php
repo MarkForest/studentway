@@ -11,7 +11,7 @@ namespace app\controllers;
 
 use yii\web\Controller;
 
-class CourseController extends Controller
+class CoursePolishController extends Controller
 {
     public $layout = "courses";
 

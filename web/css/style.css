@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
   }
 }
-#fh5co-header.navbar-fixed-top #navbar li.call-to-action a {
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a ,.box-faq .call-to-action a, .modal-footer .call-to-action{
   border: 2px solid #ff3b30;
   padding: 5px 10px 3px 10px;
   margin: 12px 0 0 0px;
@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 30px;
   border-radius: 30px;
 }
-#fh5co-header.navbar-fixed-top #navbar li.call-to-action a:hover {
+#fh5co-header.navbar-fixed-top #navbar li.call-to-action a:hover,.box-faq .call-to-action a:hover,.modal-footer .call-to-action:hover {
   background-color: #ff3b30;
   color: #fff !important;
 }
@@ -427,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 50px 0 0 0;
   padding: 0;
 }
-.mt .list-nav li{
+.mt .list-nav li, .box-faq ul li{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   position: relative;
 }
-.mt .list-nav li i {
+.mt .list-nav li i ,.box-faq ul li i{
   position: absolute;
   left: 0;
   top: 0;
@@ -760,9 +760,24 @@ h1, h2, h3, h4, h5, h6 {
 .box-faq {
   margin-bottom: 60px;
 }
+
+.box-faq .call-to-action{
+  margin-top: 20px;
+  cursor: pointer;
+}
+.box-faq .call-to-action a,.modal-footer .call-to-action{
+  font-size: 16px;
+  color:rgba(0,0,0,0.5);
+  text-decoration: none ;
+  line-height:20px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
 .box-faq h3 {
   font-size: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .partner-logo {

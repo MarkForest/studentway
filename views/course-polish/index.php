@@ -165,7 +165,20 @@
 
             <div class="row">
                 <div class="pricing">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
+                        <div class="price-box to-animate-2 popular">
+                            <h2 class="pricing-plan pricing-plan-offer">Безкоштовний<span>Best Offer</span></h2>
+                            <div class="price"><sup class="currency">$</sup>0<small>/month</small></div>
+                            <ul>
+                                <li><p><i class="icon-check2"></i>Польський для абітурієнтів.</p></li>
+                                <li><p><i class="icon-check2"></i>1 місяць. Пробний курс.</p></li>
+                                <li><p><i class="icon-check2"></i>Доступ до даних протягом одного місяця.</p></li>
+                            </ul>
+                            <p> </p>
+                            <!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
+                        </div>
+                    </div>
+                    <div class="col-md-4">
                         <div class="price-box to-animate-2">
                             <h2 class="pricing-plan">Базовий</h2>
                             <div class="price"><sup class="currency">Грн</sup>650<small>/месяц</small></div>
@@ -178,7 +191,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="price-box to-animate-2">
                             <h2 class="pricing-plan">Розширений</h2>
                             <div class="price"><sup class="currency">Грн</sup>650<small>/month</small></div>
@@ -186,33 +199,6 @@
                                 <li><p><i class="icon-check2"></i>Польський для абітурієнтів вступників в державні вузи, на безкоштовні програми</p></li>
                                 <li><p><i class="icon-check2"></i>2 роки. Гарантований рівень В2.</p></li>
                                 <li><p><i class="icon-check2"></i>2 заняття в тиждень по 90 хв. Графік: 16:00 - 17:30 або 18:00 - 19:30.</p></li>
-                            </ul>
-<!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="price-box to-animate-2 popular">
-                            <h2 class="pricing-plan pricing-plan-offer">Базовий <span>Best Offer</span></h2>
-                            <div class="price"><sup class="currency">$</sup>74<small>/month</small></div>
-                            <ul>
-                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
-                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
-                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
-                            </ul>
-                            <p> </p>
-<!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="price-box to-animate-2">
-                            <h2 class="pricing-plan">Розширений</h2>
-                            <div class="price"><sup class="currency">$</sup>140<small>/month</small></div>
-                            <ul>
-                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
-                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
-                                <li><p><i class="icon-check2"></i>Far far away, behind the word mountains, far from the Consonantia.</p></li>
                             </ul>
 <!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
                         </div>
@@ -315,12 +301,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/person4.jpg" alt="Roger Garfield"></div>
-                        <h3>Roger Garfield</h3>
-                        <span class="position">Co-Founder, Lead Developer</span>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <div class="user"><img class="img-reponsive" src="/images/person5.jpg" alt="Коваленко Олег"></div>
+                        <h3>Коваленко Олег</h3>
+                        <span class="position">Директор агенціі StudentWay</span>
+                        <p>Величезний досвід роботи
+                            в освіті
+                            закінчів аспірантуру, захистив
+                            диссертацію, працював
+                            доцентом в ДХТУ, директором філії
+                            Інститута сучасних професій,
+                            керівником Японського центру,
+                            начальником учбового центру АТБ,
+                            начальником учбового центру Дніпропетровск-Авто</p>
                         <ul class="social-media">
                             <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
                             <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
@@ -331,12 +325,18 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/person2.jpg" alt="Roger Garfield"></div>
-                        <h3>Kevin Steve</h3>
-                        <span class="position">Co-Founder, Product Designer</span>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <div class="user"><img class="img-reponsive" src="/images/person6.jpg" alt="Roger Garfield"></div>
+                        <h3>Максименко Юлия</h3>
+                        <span class="position">Менеджер відділу</span>
+                        <p>Магістр, працюе в команді
+                            понад 3 роки.
+                            Займаеться всіми питаннями організації
+                            вивчення мови
+                            від реклами, узгодження розкладу занять
+                            до формування програм навчання
+                            в нових групах.</p>
                         <ul class="social-media">
                             <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
                             <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
@@ -347,12 +347,39 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="team-box text-center to-animate-2">
                         <div class="user"><img class="img-reponsive" src="/images/person3.jpg" alt="Roger Garfield"></div>
-                        <h3>Ross Standford</h3>
-                        <span class="position">Full Stack Developer</span>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <h3>Проскуровська Ніна</h3>
+                        <span class="position">Старший викладач польскої</span>
+                        <p>Має понад 1000 учнів,
+                            які успішно пройшли іспити
+                            і зараз навчаются у державних
+                            і приватних Університетах Польщі.
+                            Постіно працює над розробкою новітніх
+                            методик навчання и втілює їх у
+                            своїх уроках.
+                            Працює в агенції з дня її засновання.</p>
+                        <ul class="social-media">
+                            <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
+                            <li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
+                            <li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-box text-center to-animate-2">
+                        <div class="user"><img class="img-reponsive" src="/images/person.jpg" alt="Roger Garfield"></div>
+                        <h3>Коноваленко Наталія</h3>
+                        <span class="position">Викладач польскої мови</span>
+                        <p>Навчалась і жила в Польщі протягом 3 років.
+                            Дипломований фахівец,
+                            втілюючий в життя новітні технології
+                            навчання і Європейський досвід
+                            в Україні.</p>
                         <ul class="social-media">
                             <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
                             <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
@@ -372,10 +399,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Common Questions</h2>
+                    <h2 class="to-animate">Загальні питання</h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Everything you need to know before you get started</h3>
+                            <h3 class="to-animate">Все, що потрібно знати, перш ніж почати</h3>
                         </div>
                     </div>
                 </div>
@@ -383,31 +410,48 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="box-faq to-animate-2">
-                        <h3>What is Union?</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <h3>Методика навчання. Основні питання</h3>
+                        <ul>
+                            <li><i class="icon-question"></i>Яка методика навчання використовується?</li>
+                            <li><i class="icon-question"></i>Скільки треба часу, щоб заговорити польською, якщо займатися "з нуля"?</li>
+                            <li><i class="icon-question"></i>Чи зможу я вільно спілкуватися по закінченню курсів?</li>
+                            <li><i class="icon-question"></i>Як ви тестуєте нових студентів перед початком навчання?</li>
+                            <li class="call-to-action"><a data-toggle="modal" data-target="#methodology">Відповіді</a></li>
+                        </ul>
+
                     </div>
                     <div class="box-faq to-animate-2">
-                        <h3>I have technical problem, who do I email? </h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    </div>
-                    <div class="box-faq to-animate-2">
-                        <h3>How do I use Bato features?</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <h3>Сертифікати та іспити.</h3>
+                        <ul>
+                            <li><i class="icon-question"></i>Чи видається сертифікат після закінчення навчання?</li>
+                            <li><i class="icon-question"></i> Ви готуєте студентів до здачі іспитів в Польщі?</li>
+                            <li class="call-to-action"><a data-toggle="modal" data-target="#сertificates">Відповіді</a></li>
+                        </ul>
+
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="box-faq to-animate-2">
-                        <h3>What language are available?</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <h3>Фінанси. Основні питання.</h3>
+                        <ul>
+                            <li><i class="icon-question"></i>Як робиться оплата? </li>
+                            <li><i class="icon-question"></i>Йде перерахунок за кожне пропущене зайняття?</li>
+                            <li><i class="icon-question"></i>Є у вас індивідуальне зайняття?</li>
+                            <li><i class="icon-question"></i>Чи міняється оплата на курсах в впродовж року</li>
+                            <li><i class="icon-question"></i>Чи є пільги?</li>
+                            <li class="call-to-action"><a data-toggle="modal" data-target="#finance"><span>Відповіді</span></a></li>
+                        </ul>
+
                     </div>
                     <div class="box-faq to-animate-2">
-                        <h3>Can I have a username that is already taken?</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    </div>
-                    <div class="box-faq to-animate-2">
-                        <h3>Is Union free?</h3>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <h3>Основні організаційні питання</h3>
+                        <ul>
+                            <li><i class="icon-question"></i>Як записатися на курси?</li>
+                            <li><i class="icon-question"></i>Якщо, раптом, я не зможу потрапити на заняття, що мені треба робити?</li>
+                            <li class="call-to-action"><a data-toggle="modal" data-target="#organizational"><span>Відповіді</span></a></li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
