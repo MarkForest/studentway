@@ -1,20 +1,66 @@
-<section id="fh5co-home" data-section="home" data-stellar-background-ratio="0.5">
+<section id="fh5co-home" data-section="home">
     <div class="gradient"></div>
     <div class="container">
-        <h2 class="to-animate home_page">За допомогою StudentWay 1356 абітурієнтів стали СТУДЕНТАМИ</h2>
-        <div class="text-wrap">
-            <div class="text-inner">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="to-animate">Польска мова для абітурієнтів</h1>
-<!--                        <h2 class="to-animate">За допомогою StudentWay 1356 абітурієнтів стали СТУДЕНТАМИ</h2>-->
-                        <div class="call-to-action">
-                            <a href="#" class="download to-animate">Акція "Місяць Безкоштовно". Прийняти участь у Акції</a>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-md-6 home-first-text-block pull-left">
+                <p class="text-block">
+                    За допомогою StudentWay 1356 абітурієнтів стали студентами університетів Польщі
+                </p>
+            </div>
+
+            <div class="col-md-6 home-first-text-block pull-right">
+                <p class="text-block">
+                    СЕРТИФІКАТ StudentWay визнаний у 55 державних і приватних Університатах Польші
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7 home-content-text-block">
+                <h1>ПОЛЬСКА МОВА для АБІТУРІЕНТІВ</h1>
+                <ul>
+                    <li><i class="icon-check2"></i>Загальна підготовка до рівня B1 та B2</li>
+                    <li><i class="icon-check2"></i>Спеіальна підготовка - лекції з 5 предметів матемтика, фізика, хімія, економіка</li>
+                    <li><i class="icon-check2"></i>Курс :100 подряд українському студенту в Польщі</li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 home-content-text-block">
+               <div class="stock-block">
+                   <p><span>ЗНИЖКА</span><br>
+                       на оформлення
+                       документів для вступу в<br> <span>ВНЗ ПОЛЬЩІ</span><br>для випускниів
+                       КУРСУ</p>
+               </div>
+               <div class="cast hidden-xs">
+                   <p>1500<span>грн</span> </p>
+               </div>
+
+                <div class="cast-button">
+                    <p>ДІЗНАЙСЯ БІЛЬШЕ</p>
+                    <span>ми завжди  на зв’язку</span>
                 </div>
             </div>
         </div>
+    </div>
+
+
+
+<!--    <div class="container">-->
+<!--        <h2 class="to-animate home_page">За допомогою StudentWay 1356 абітурієнтів стали СТУДЕНТАМИ</h2>-->
+<!--        <div class="text-wrap">-->
+<!--            <div class="text-inner">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-8 col-md-offset-2">-->
+<!--                        <h1 class="to-animate">Польска мова для абітурієнтів</h1>-->
+<!--                        <h2 class="to-animate">За допомогою StudentWay 1356 абітурієнтів стали СТУДЕНТАМИ</h2>-->
+<!--                        <div class="call-to-action">-->
+<!--                            <a href="#" class="download to-animate">Акція "Місяць Безкоштовно". Прийняти участь у Акції</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </section>
 
@@ -60,25 +106,60 @@
     <div class="fh5co-explore fh5co-explore-bg-color">
         <div class="bg-text">
         <div class="container">
+            <h2 class="to-animate text-center">Гарантії Якості</h2>
             <div class="row">
-                <div class="col-md-8 to-animate-3">
-                    <img class="img-responsive" src="/images/work_2.jpg" alt="work">
+                <div class="header-block-explore to-animate-3">
+                    <div class="col-md-2 col-md-offset-3">
+                        <h3 class="">Навчання</h3>
+                        <img src="/images/icon_3373.png" alt="students" class="">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>100% КОНТРОЛЬ ПРОЦЕСУ</h3>
+                        <h3>безкоштовне повторення курсу</h3>
+                        <h3>вільний доступ до матеріалів</h3>
+                    </div>
                 </div>
-                <div class="col-md-4 to-animate-3">
+            </div>
+            <div class="row">
+                <div class="">
                     <div class="mt">
-                        <div class="">
-                            <h4><i class="icon-people"></i>Гарантуємо 100%-у якість навчання</h4>
-                            <p>Якщо ви не досягнете запланованого програмою курсу рівня знань і навичок, Ви зможемо безкоштовно повторити курс. У разі недостатнього засвоєння навчального матеріалу Ви можете пройти повторне навчання, якщо з вашого боку були виконані всі умови відвідувань занять і виконання завдань. </p>
+                        <div class="col-md-4 to-animate-3 text-center">
+                            <div class="block-garant center-block">
+                                <div class="text-garant">
+                                    <h4 >ГАРАНТУЄМО</h4>
+                                    <p> Зможете <br> вільно <br> володіти <br> мовою </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="">
-
-                            <h4><i class="icon-shield"></i>Гарантуємо повний контроль процесу</h4>
-                            <p>Наше завдання в тому, що б Ви були впевнені в кожній своїй дії в процесі навчання, опанували навичками розуміння і мовлення під керівництвом досвідченого викладача.</p>
+                        <div class="col-md-4 to-animate-3 text-center">
+                            <div class="block-garant center-block">
+                                <div class="text-garant">
+                                    <h4>ГАРАНТУЄМО</h4>
+                                    <p> Достатній <br> рівень <br> володіння <br> мовою </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="">
-                            <h4><i class="icon-video2"></i>Гарантуємо вільний доступ до бібліотеки</h4>
-                            <p> Безкоштовних видеоуроків, аудіокурсів, тренажоров. Учень може формувати самостійно додаткові заняття по темі яка Вас цікавить. (Математика, хімія, фізика, менеджмент та ін.).</p>
+                        <div class="col-md-4 to-animate-3 text-center">
+                            <div class="block-garant center-block">
+                                <div class="text-garant">
+                                    <h4>ГАРАНТУЄМО</h4>
+                                    <p> необхідний <br> об’єм <br> фахової <br> лексики</p>
+                                </div>
+                            </div>
                         </div>
+<!--                        <div class="col-md-4 to-animate-3">-->
+<!--                            <h4><i class="icon-people"></i>Гарантуємо 100%-у якість навчання</h4>-->
+<!--                            <p>Якщо ви не досягнете запланованого програмою курсу рівня знань і навичок, Ви зможемо безкоштовно повторити курс. У разі недостатнього засвоєння навчального матеріалу Ви можете пройти повторне навчання, якщо з вашого боку були виконані всі умови відвідувань занять і виконання завдань. </p>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4 to-animate-3">-->
+<!---->
+<!--                            <h4><i class="icon-shield"></i>Гарантуємо повний контроль процесу</h4>-->
+<!--                            <p>Наше завдання в тому, що б Ви були впевнені в кожній своїй дії в процесі навчання, опанували навичками розуміння і мовлення під керівництвом досвідченого викладача.</p>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4 to-animate-3">-->
+<!--                            <h4><i class="icon-video2"></i>Гарантуємо вільний доступ до бібліотеки</h4>-->
+<!--                            <p> Безкоштовних видеоуроків, аудіокурсів, тренажоров. Учень може формувати самостійно додаткові заняття по темі яка Вас цікавить. (Математика, хімія, фізика, менеджмент та ін.).</p>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>
@@ -137,12 +218,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 to-animate">
-                <h3>Пробне заняття</h3>
-                <p>Скачайте безкоштовно додаткові уроки по курсу розмовний польський. Вам буде надіслано пробне заняття</p>
+                <h3>ПРОПОЗИЦІЯ ДІЄ до
+                    КОНСУЛЬТАЦІЯ про вимоги до знання польскої мови в ДЕРЖАВНИХ УНШВЕРСИТЕТАХ ПОЛЬЩІ</h3>
+                <p>рівень знання мови у вибраному Вами Університеті, умови проведення співбесід,
+                    порядок проведення єкзаменів та ін.</p>
             </div>
             <div class="col-md-6 to-animate-2">
                 <div class="call-to-action text-right">
-                    <a href="#" class="sign-up">Завантажити безкоштовно</a>
+                    <a href="#" class="sign-up">Я хочу отримати БЕЗКОШТОВНУ КОНСУЦЛЬТАЦІЮ ЗАТЛЕФОНУЙТЕ МЕНІ протягом 30 секунд</a>
                 </div>
             </div>
         </div>
@@ -183,7 +266,7 @@
                             <h2 class="pricing-plan">Базовий</h2>
                             <div class="price"><sup class="currency">Грн</sup>650<small>/месяц</small></div>
                             <ul>
-                                <li><p><i class="icon-check2"></i>Польський для абітурієнтів вступників в приватні або державні вузи.</p></li>
+                                <li><p><i class="icon-check2"></i>  Польський для абітурієнтів вступників в приватні або державні вузи.</p></li>
                                 <li><p><i class="icon-check2"></i>1 рік. Гарантований рівень В1.</p></li>
                                 <li><p><i class="icon-check2"></i>2 заняття в тиждень по 90 хв. Графік: 16:00 - 17:30 або 18:00 - 19:30.</p></li>
                             </ul>
@@ -618,13 +701,27 @@
 <div class="getting-started getting-started-2">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 to-animate">
-                <h3>Getting Started</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            </div>
-            <div class="col-md-6 to-animate-2">
-                <div class="call-to-action text-right">
-                    <a href="#" class="sign-up">Sign Up For Free</a>
+            <div class="to-animate">
+                <h3 class="text-center">Вывчаючи ПОЛЬСЬКУ зі StudentWay ВЫ ОТРИМУЄТЕ</h3>
+                <div class="col-md-2 text-center col-md-offset-1">
+                    <img src="/images/get_1.png" class="img-responsive" alt="images">
+                    <p>КУРС ПОЛЬСЬКОХЇ мови на рівень В1/В2</p>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="/images/get_2.png" class="img-responsive" alt="images">
+                    <p>КУРС РОЗМОВНИЙ ПОЛЬСЬКИЙ</p>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="/images/get_3.png" class="img-responsive" alt="images">
+                    <p>КУРС ІСТОРІЯ і КУЛЬТУРА ПОЛЬЩІ</p>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="/images/get_4.png" class="img-responsive" alt="images">
+                    <p>СПЕЦКУРСИ математика, фізики та ін</p>
+                </div>
+                <div class="col-md-2 text-center">
+                    <img src="/images/get_5.png" class="img-responsive" alt="images">
+                    <p>ДОСТУП до мультимедійної бібліотеки</p>
                 </div>
             </div>
         </div>

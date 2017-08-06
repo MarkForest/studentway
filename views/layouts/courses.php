@@ -57,7 +57,8 @@ AppAsset::register($this);
         </div>
     </header>
 
-    <?= $content?>
+   <?= $content?>
+
 
 
     <div id="fh5co-footer" role="contentinfo">
