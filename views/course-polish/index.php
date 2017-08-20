@@ -69,10 +69,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 section-heading text-center">
-                <h2 class="to-animate">Переваги нашого вузу</h2>
+                <h2 class="to-animate">Переваги оволодіння мовою на курсах StudentWay</h2>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 subtext to-animate">
-                        <h3>Ми підтвердили якість нашої роботи - сертифікати Studentway приймають і приватні, і державні університети.</h3>
+                        <h3>Ми підтвердили якість нашої роботи! Сертифікати Studentway приймають і приватні, і державні університети.</h3>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                         <h3>Чому Потрібно Вибрати Наші Курси</h3>
 <!--                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>-->
                         <ul class="list-nav">
-                            <li><i class="icon-check2"></i>Оптимальне співвідношення ціна/якість 36 грн/год</li>
+                            <li><i class="icon-check2"></i>Оптимальне співвідношення ціна/якість <br>36 грн/год</li>
                             <li><i class="icon-check2"></i>650 безкоштовних додаткових тематичних уроків, лекцій, занять по скайп</li>
                             <li><i class="icon-check2"></i>18 років успішної праці в галузі освіти</li>
                             <li><i class="icon-check2"></i>Наші викладачі знають всі особливості викладання польської для успішного старту в вищих навчальних закладах Польщі</li>
@@ -106,7 +106,9 @@
     <div class="fh5co-explore fh5co-explore-bg-color">
         <div class="bg-text">
         <div class="container">
-            <h2 class="to-animate text-center">Гарантії Якості</h2>
+            <div class="col-md-12 section-heading text-center">
+                <h2 class="to-animate text-center">Гарантії Якості Навчання</h2>
+            </div>
             <div class="row">
                 <div class="header-block-explore to-animate-3">
                     <div class="col-md-2 col-md-offset-3">
@@ -135,7 +137,7 @@
                             <div class="block-garant center-block">
                                 <div class="text-garant">
                                     <h4>ГАРАНТУЄМО</h4>
-                                    <p> Достатній <br> рівень <br> володіння <br> мовою </p>
+                                    <p> Достатній <br> рівень <br> володіння <br> грамматикою </p>
                                 </div>
                             </div>
                         </div>
@@ -167,6 +169,21 @@
         </div>
     </div>
 </section>
+<div class="getting-started getting-started-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 to-animate">
+                <h3>Дізнатися про переваги навчання мови зі Studentway<br>
+                    щосуботи о 10-й ранку</h3>
+            </div>
+            <div class="col-md-4 to-animate-2">
+                <div class="call-to-action text-right">
+                    <a href="#" class="sign-up">Записатися</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <section id="fh5co-testimony" data-section="testimony">
     <div class="container">
         <div class="row">
@@ -201,8 +218,7 @@
                                     <img src="/images/person3.jpg" alt="user">
                                 </figure>
                                 <blockquote>
-                                    <p>"Дуже доступні і добре структуровані заняття з польської мови.
-                                        Подобається уроки "Починаємо говорити по польськи" - повторювати текст досить просто і непомітно запам'ятовуєш необхідні слова і вирази. Бонус - з'являються цікаві фільми на польському)."</p>
+                                    <p>"Очень доступные и хорошо структурированные занятия по польскому языку. Нравится уроки "Начинаем говорить по польски" - повторять текст достаточно просто и незаметно запоминаешь необходимые слова и выражения. Бонус - появляются интересные фильмы на польском)."</p>
                                 </blockquote>
                                 <span>Тетяна Полонська</span>
                             </div>
@@ -214,18 +230,19 @@
     </div>
 </section>
 
-<div class="getting-started getting-started-1">
+<div class="getting-started getting-started-1 block-with-clock">
     <div class="container">
         <div class="row">
             <div class="col-md-6 to-animate">
-                <h3>ПРОПОЗИЦІЯ ДІЄ до
-                    КОНСУЛЬТАЦІЯ про вимоги до знання польскої мови в ДЕРЖАВНИХ УНШВЕРСИТЕТАХ ПОЛЬЩІ</h3>
+                <h3 id="header-clock">ПРОПОЗИЦІЯ ДІЄ</h3>
+                <div id="CDT"></div>
+                <h3>КОНСУЛЬТАЦІЯ про вимоги до знання польскої мови в ДЕРЖАВНИХ УНШВЕРСИТЕТАХ ПОЛЬЩІ</h3>
                 <p>рівень знання мови у вибраному Вами Університеті, умови проведення співбесід,
                     порядок проведення єкзаменів та ін.</p>
             </div>
             <div class="col-md-6 to-animate-2">
                 <div class="call-to-action text-right">
-                    <a href="#" class="sign-up">Я хочу отримати БЕЗКОШТОВНУ КОНСУЦЛЬТАЦІЮ ЗАТЛЕФОНУЙТЕ МЕНІ протягом 30 секунд</a>
+                    <a href="#" class="sign-up">Я хочу отримати БЕЗКОШТОВНУ КОНСУЦЛЬТАЦІЮ ЗАТЕЛЕФОНУЙТЕ МЕНІ протягом 30 секунд</a>
                 </div>
             </div>
         </div>
@@ -298,7 +315,63 @@
         </div>
     </div>
 </section>
-
+<div class="getting-started getting-started-2">
+    <div class="container">
+        <div class="row">
+            <div class="to-animate">
+                <h3 class="text-center">Вывчаючи ПОЛЬСЬКУ зі StudentWay ВЫ ОТРИМУЄТЕ</h3>
+                <div class="col-md-2 text-center">
+                    <div class="col-md-9">
+                        <img src="/images/get_1.png" class="img-responsive" alt="images">
+                        <p>КУРС ПОЛЬСЬКОХЇ мови на рівень В1/В2</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/images/red-plus-md.png" alt="plus">
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="col-md-9">
+                        <img src="/images/get_2.png" class="img-responsive" alt="images">
+                        <p>КУРС РОЗМОВНИЙ ПОЛЬСЬКИЙ</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/images/red-plus-md.png" alt="plus">
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="col-md-9">
+                        <img src="/images/get_3.png" class="img-responsive" alt="images">
+                        <p>КУРС ІСТОРІЯ і КУЛЬТУРА ПОЛЬЩІ</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/images/red-plus-md.png" alt="plus">
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="col-md-9">
+                        <img src="/images/get_4.png" class="img-responsive" alt="images">
+                        <p>СПЕЦКУРСИ математика, фізики та ін</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/images/red-plus-md.png" alt="plus">
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="col-md-9">
+                        <img src="/images/get_5.png" class="img-responsive" alt="images">
+                        <p>ДОСТУП до мультимедійної бібліотеки</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="/images/micr.png" alt="plus">
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <h3>650<br>грн/міс</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <section id="fh5co-services" data-section="services">
     <div class="fh5co-services">
         <div class="container">
@@ -307,7 +380,7 @@
                     <h2 class="to-animate">Ми пропонуємо послуги</h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Наше завдання полягає в тому, щоб ви вивчили польську мову на відмінно. З цим завданням ми успішно справляємося. </h3>
+                            <h3 class="to-animate">Наше завдання полягає в тому, щоб ви вивчили польську мову на відмінно.<br> Разом зі StudentWay це МОЖЛИВО!!! </h3>
                         </div>
                     </div>
                 </div>
@@ -369,7 +442,21 @@
         </div>
     </div>
 </section>
-
+<div class="getting-started getting-started-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 to-animate">
+                <h3>ОТРИМАТИ доступ до системи "My StudentWay"</h3>
+                <p>на протязі місяця користуючись ЗАКРИТИМИ ресурсами сайту studentway.org.ua</p>
+            </div>
+            <div class="col-md-4 to-animate-2">
+                <div class="call-to-action text-right">
+                    <a href="#" class="sign-up">ОТРИМАТИ ДОСТУП <b>БЕЗКОШТОВНО</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <section id="fh5co-team" data-section="team">
     <div class="fh5co-team">
         <div class="container">
@@ -432,7 +519,7 @@
 
                 <div class="col-md-3">
                     <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/person3.jpg" alt="Roger Garfield"></div>
+                        <div class="user"><img class="img-reponsive" src="/images/person8.jpg" alt="Roger Garfield"></div>
                         <h3>Проскуровська Ніна</h3>
                         <span class="position">Старший викладач польскої</span>
                         <p>Має понад 1000 учнів,
@@ -455,7 +542,7 @@
 
                 <div class="col-md-3">
                     <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/person.jpg" alt="Roger Garfield"></div>
+                        <div class="user"><img class="img-reponsive" src="/images/person7.jpg" alt="Roger Garfield"></div>
                         <h3>Коноваленко Наталія</h3>
                         <span class="position">Викладач польскої мови</span>
                         <p>Навчалась і жила в Польщі протягом 3 років.
@@ -541,20 +628,27 @@
         </div>
     </div>
 </section>
-
-<hr>
+<div class="getting-started getting-started-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 to-animate">
+                <h3>Якщо є питання ЗАДАВАЙ, ми обов'язково відповімо</h3>
+            </div>
+            <div class="col-md-4 to-animate-2">
+                <div class="call-to-action text-right">
+                    <a href="#" class="sign-up">Задати ПИТАННЯ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section id="fh5co-trusted" data-section="trusted" class="hidden-xs">
     <div class="fh5co-trusted">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Наші партнери</h2>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Нам довіряють ці популярні компанії</h3>
-                        </div>
-                    </div>
+                    <h3 class="to-animate">Наші сертифікати визнються більше ніж в 50 університетах Польщі</h3>
                 </div>
             </div>
             <div class="row">
@@ -694,36 +788,10 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-12 text-center">
+                <h3 class="to-animate">Кожен університет може проводити додаткові співбесіди при вступі.</h3>
+            </div>
         </div>
     </div>
 </section>
 
-<div class="getting-started getting-started-2">
-    <div class="container">
-        <div class="row">
-            <div class="to-animate">
-                <h3 class="text-center">Вывчаючи ПОЛЬСЬКУ зі StudentWay ВЫ ОТРИМУЄТЕ</h3>
-                <div class="col-md-2 text-center col-md-offset-1">
-                    <img src="/images/get_1.png" class="img-responsive" alt="images">
-                    <p>КУРС ПОЛЬСЬКОХЇ мови на рівень В1/В2</p>
-                </div>
-                <div class="col-md-2 text-center">
-                    <img src="/images/get_2.png" class="img-responsive" alt="images">
-                    <p>КУРС РОЗМОВНИЙ ПОЛЬСЬКИЙ</p>
-                </div>
-                <div class="col-md-2 text-center">
-                    <img src="/images/get_3.png" class="img-responsive" alt="images">
-                    <p>КУРС ІСТОРІЯ і КУЛЬТУРА ПОЛЬЩІ</p>
-                </div>
-                <div class="col-md-2 text-center">
-                    <img src="/images/get_4.png" class="img-responsive" alt="images">
-                    <p>СПЕЦКУРСИ математика, фізики та ін</p>
-                </div>
-                <div class="col-md-2 text-center">
-                    <img src="/images/get_5.png" class="img-responsive" alt="images">
-                    <p>ДОСТУП до мультимедійної бібліотеки</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>

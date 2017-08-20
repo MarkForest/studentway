@@ -88,7 +88,7 @@ AppAsset::register($this);
                     </ul>
                 </div>
                 <div class="col-md-4 to-animate">
-                    <h3 class="section-title">Залиште нам повідомлення</h3>
+                    <h3 class="section-title">Отримай знижку на послуги по вступу в Університети Польші  від 1500 грн, як випускник курсу Польська мова для абітурієнтів</h3>
                     <form class="contact-form">
                         <div class="form-group">
                             <label for="name" class="sr-only">ім'я</label>

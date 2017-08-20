@@ -36,6 +36,7 @@ class AppAsset extends AssetBundle
         'https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false',
         'js/google_map.js',
         'js/main.js',
+        'js/countdown.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
