@@ -26,10 +26,10 @@ class AppAsset extends AssetBundle
         'css/style.css',
     ];
     public $js = [
-        'js/modernizr-2.6.2.min.js',
         'js/jquery.min.js',
-        'js/jquery.easing.1.3.js',
         'js/bootstrap.min.js',
+        'js/modernizr-2.6.2.min.js',
+        'js/jquery.easing.1.3.js',
         'js/jquery.waypoints.min.js',
         'js/jquery.stellar.min.js',
         'js/owl.carousel.min.js',

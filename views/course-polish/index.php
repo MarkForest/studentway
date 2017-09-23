@@ -1,66 +1,108 @@
+<?php
+
+use yii\helpers\Html;
+
+
+?>
+<header role="banner" id="fh5co-header">
+    <div class="fluid-container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <!-- Mobile Toggle Menu Button -->
+                <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+                <a class="navbar-brand" href="index.html"><img src="/images/logo_bell.png"></a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#" data-nav-section="home"><span>Головна</span></a></li>
+                    <li><a href="#" data-nav-section="explore"><span>Переваги</span></a></li>
+                    <li><a href="#" data-nav-section="testimony"><span>Відгуки</span></a></li>
+                    <li><a href="#" data-nav-section="pricing"><span>Ціни</span></a></li>
+                    <li><a href="#" data-nav-section="team"><span>Наші спеціолісти</span></a></li>
+<!--                    <li><a href="#" data-nav-section="faq"><span>Питання</span></a></li>-->
+<!--                    <li class="call-to-action"><a href="#"><span>Uk</span></a></li>-->
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+    <div class="drop hidden-xs">
+        <button class="dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><?=$drop?>
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><?= Html::a('Дніпро (uk)', ['course-polish/index?reg=dp&loc=uk']) ?></li>
+            <li><?= Html::a('Днепр (ru)', ['course-polish/index?reg=dp&loc=ru']) ?></li>
+            <li><?= Html::a('Київ (uk)', ['course-polish/index?reg=ky&loc=uk']) ?></li>
+            <li><?= Html::a('Киев (ru)', ['course-polish/index?reg=ky&loc=ru']) ?></li>
+            <li><?= Html::a('Харьків (uk)', ['course-polish/index?reg=kh&loc=uk']) ?></li>
+            <li><?= Html::a('Харьков (ru)', ['course-polish/index?reg=kh&loc=ru']) ?></li>
+            <li><?= Html::a('Вінниця (uk)', ['course-polish/index?reg=vn&loc=uk']) ?></li>
+            <li><?= Html::a('Винница (ru)', ['course-polish/index?reg=vn&loc=ru']) ?></li>
+            <li><?= Html::a('Кропівницький (uk)', ['course-polish/index?reg=kv&loc=uk']) ?></li>
+            <li><?= Html::a('Кропивницкий (ru)', ['course-polish/index?reg=kv&loc=ru']) ?></li>
+            <li><?= Html::a('Кременчуг (uk)', ['course-polish/index?reg=km&loc=uk']) ?></li>
+            <li><?= Html::a('Кременчук (ru)', ['course-polish/index?reg=km&loc=ru']) ?></li>
+            <li><?= Html::a('Ізмаил (uk)', ['course-polish/index?reg=iz&loc=uk']) ?></li>
+            <li><?= Html::a('Измаил (ru)', ['course-polish/index?reg=iz&loc=ru']) ?></li>
+            <li><?= Html::a('Одесса (uk)', ['course-polish/index?reg=od&loc=uk']) ?></li>
+            <li><?= Html::a('Одесса (ru)', ['course-polish/index?reg=od&loc=ru']) ?></li>
+            <li><?= Html::a('Біла Церква (uk)', ['course-polish/index?reg=bc&loc=uk']) ?></li>
+            <li><?= Html::a('Белая Церковь (ru)', ['course-polish/index?reg=bc&loc=ru']) ?></li>
+            <li><?= Html::a('Cлов\'янськ (uk)', ['course-polish/index?reg=sl&loc=uk']) ?></li>
+            <li><?= Html::a('Славянск (uk)', ['course-polish/index?reg=sl&loc=uk']) ?></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    </div>
+</header>
+
 <section id="fh5co-home" data-section="home">
     <div class="gradient"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-6 home-first-text-block pull-left">
                 <p class="text-block">
-                    За допомогою StudentWay 1356 абітурієнтів стали студентами університетів Польщі
+                    <?=$loc=='uk'?$home->header_title_1_uk:$home->header_title_1_ru?>
                 </p>
             </div>
 
             <div class="col-md-6 home-first-text-block pull-right">
                 <p class="text-block">
-                    СЕРТИФІКАТ StudentWay визнаний у 55 державних і приватних Університатах Польші
+                    <?=$loc=='uk'?$home->header_title_2_uk:$home->header_title_2_ru?>
                 </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-7 home-content-text-block">
-                <h1>ПОЛЬСКА МОВА для АБІТУРІЕНТІВ</h1>
+                <h1><?=$loc=='uk'?$home->title_uk:$home->title_ru?></h1>
+                <?php if (isset($listHome)):?>
                 <ul>
-                    <li><i class="icon-check2"></i>Загальна підготовка до рівня B1 та B2</li>
-                    <li><i class="icon-check2"></i>Спеіальна підготовка - лекції з 5 предметів матемтика, фізика, хімія, економіка</li>
-                    <li><i class="icon-check2"></i>Курс :100 подряд українському студенту в Польщі</li>
+                    <?php foreach ($listHome as $list):?>
+                    <li><i class="icon-check2"></i><?=$loc=='uk'?$list->text_uk:$list->text_ru?></li>
+                    <?php endforeach;?>
                 </ul>
+                <?php endif;?>
             </div>
 
             <div class="col-md-5 home-content-text-block">
                <div class="stock-block">
-                   <p><span>ЗНИЖКА</span><br>
-                       на оформлення
-                       документів для вступу в<br> <span>ВНЗ ПОЛЬЩІ</span><br>для випускниів
-                       КУРСУ</p>
+                   <p><?=$loc=='uk'?$home->stock_content_uk:$home->stock_content_ru?></p>
                </div>
                <div class="cast hidden-xs">
-                   <p>1500<span>грн</span> </p>
+                   <p><?=$home->cost?><span>грн</span> </p>
                </div>
 
                 <div class="cast-button">
-                    <p>ДІЗНАЙСЯ БІЛЬШЕ</p>
-                    <span>ми завжди  на зв’язку</span>
+                    <p><?=$loc=='uk'?$home->button_text_uk:$home->button_text_ru?></p>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-<!--    <div class="container">-->
-<!--        <h2 class="to-animate home_page">За допомогою StudentWay 1356 абітурієнтів стали СТУДЕНТАМИ</h2>-->
-<!--        <div class="text-wrap">-->
-<!--            <div class="text-inner">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-md-8 col-md-offset-2">-->
-<!--                        <h1 class="to-animate">Польска мова для абітурієнтів</h1>-->
-<!--                        <h2 class="to-animate">За допомогою StudentWay 1356 абітурієнтів стали СТУДЕНТАМИ</h2>-->
-<!--                        <div class="call-to-action">-->
-<!--                            <a href="#" class="download to-animate">Акція "Місяць Безкоштовно". Прийняти участь у Акції</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
     </div>
 </section>
 
@@ -69,10 +111,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 section-heading text-center">
-                <h2 class="to-animate">Переваги оволодіння мовою на курсах StudentWay</h2>
+                <h2 class="to-animate"><?=$loc=='uk'?$privilege->main_title_uk:$privilege->main_title_ru?></h2>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 subtext to-animate">
-                        <h3>Ми підтвердили якість нашої роботи! Сертифікати Studentway приймають і приватні, і державні університети.</h3>
+                        <h3><?=$loc=='uk'?$privilege->disc_uk:$privilege->disc_ru?></h3>
                     </div>
                 </div>
             </div>
@@ -85,19 +127,16 @@
             <div class="row">
                 <div class="col-md-4 to-animate-2">
                     <div class="mt">
-                        <h3>Чому Потрібно Вибрати Наші Курси</h3>
-<!--                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>-->
+                        <h3><?=$loc=='uk'?$privilege->title_list_uk:$privilege->title_list_ru?></h3>
                         <ul class="list-nav">
-                            <li><i class="icon-check2"></i>Оптимальне співвідношення ціна/якість <br>36 грн/год</li>
-                            <li><i class="icon-check2"></i>650 безкоштовних додаткових тематичних уроків, лекцій, занять по скайп</li>
-                            <li><i class="icon-check2"></i>18 років успішної праці в галузі освіти</li>
-                            <li><i class="icon-check2"></i>Наші викладачі знають всі особливості викладання польської для успішного старту в вищих навчальних закладах Польщі</li>
-                            <li><i class="icon-check2"></i>Для абітурієнтів, крім основних занять, проводимо також різні інтерактивні заходи</li>
+                            <?php foreach ($listPrivilege as $list):?>
+                            <li><i class="icon-check2"></i><?=$loc=='uk'?$list->text_uk:$list->text_ru?></li>
+                            <?php endforeach;?>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-8 to-animate-2">
-                    <img class="img-responsive" src="/images/explore.jpg" alt="work">
+                    <img class="img-responsive" src="/images/explore.png" alt="work">
                 </div>
             </div>
         </div>
@@ -107,61 +146,31 @@
         <div class="bg-text">
         <div class="container">
             <div class="col-md-12 section-heading text-center">
-                <h2 class="to-animate text-center">Гарантії Якості Навчання</h2>
+                <h2 class="to-animate text-center"><?=$loc=='uk'?$assurance->main_title_uk:$assurance->main_title_ru?></h2>
             </div>
             <div class="row">
                 <div class="header-block-explore to-animate-3">
                     <div class="col-md-2 col-md-offset-3">
-                        <h3 class="">Навчання</h3>
+                        <h3 class=""><?=$loc=='uk'?$assurance->disc_title_uk:$assurance->disc_title_ru?></h3>
                         <img src="/images/icon_3373.png" alt="students" class="">
                     </div>
-                    <div class="col-md-6">
-                        <h3>100% КОНТРОЛЬ ПРОЦЕСУ</h3>
-                        <h3>безкоштовне повторення курсу</h3>
-                        <h3>вільний доступ до матеріалів</h3>
+                    <div class="col-md-5">
+                        <h3><?=$loc=='uk'?$assurance->disc_text_uk:$assurance->disc_text_ru?></h3>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="">
                     <div class="mt">
+                        <?php foreach ($listAssurance as $list):?>
                         <div class="col-md-4 to-animate-3 text-center">
                             <div class="block-garant center-block">
                                 <div class="text-garant">
-                                    <h4 >ГАРАНТУЄМО</h4>
-                                    <p> Зможете <br> вільно <br> володіти <br> мовою </p>
+                                    <p><?=$loc=='uk'?$list->text_uk:$list->text_ru?></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 to-animate-3 text-center">
-                            <div class="block-garant center-block">
-                                <div class="text-garant">
-                                    <h4>ГАРАНТУЄМО</h4>
-                                    <p> Достатній <br> рівень <br> володіння <br> грамматикою </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 to-animate-3 text-center">
-                            <div class="block-garant center-block">
-                                <div class="text-garant">
-                                    <h4>ГАРАНТУЄМО</h4>
-                                    <p> необхідний <br> об’єм <br> фахової <br> лексики</p>
-                                </div>
-                            </div>
-                        </div>
-<!--                        <div class="col-md-4 to-animate-3">-->
-<!--                            <h4><i class="icon-people"></i>Гарантуємо 100%-у якість навчання</h4>-->
-<!--                            <p>Якщо ви не досягнете запланованого програмою курсу рівня знань і навичок, Ви зможемо безкоштовно повторити курс. У разі недостатнього засвоєння навчального матеріалу Ви можете пройти повторне навчання, якщо з вашого боку були виконані всі умови відвідувань занять і виконання завдань. </p>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-4 to-animate-3">-->
-<!---->
-<!--                            <h4><i class="icon-shield"></i>Гарантуємо повний контроль процесу</h4>-->
-<!--                            <p>Наше завдання в тому, що б Ви були впевнені в кожній своїй дії в процесі навчання, опанували навичками розуміння і мовлення під керівництвом досвідченого викладача.</p>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-4 to-animate-3">-->
-<!--                            <h4><i class="icon-video2"></i>Гарантуємо вільний доступ до бібліотеки</h4>-->
-<!--                            <p> Безкоштовних видеоуроків, аудіокурсів, тренажоров. Учень може формувати самостійно додаткові заняття по темі яка Вас цікавить. (Математика, хімія, фізика, менеджмент та ін.).</p>-->
-<!--                        </div>-->
+                        <?php endforeach;?>
                     </div>
                 </div>
             </div>
@@ -173,17 +182,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 to-animate">
-                <h3>Дізнатися про переваги навчання мови зі Studentway<br>
-                    щосуботи о 10-й ранку</h3>
+                <h3><?=isset($gettingFirst->disc_uk)?$gettingFirst->disc_uk:$gettingFirst->disc_ru?></h3>
             </div>
             <div class="col-md-4 to-animate-2">
                 <div class="call-to-action text-right">
-                    <a href="#" class="sign-up">Записатися</a>
+                    <a href="#" class="sign-up"><?=isset($gettingFirst->button_text_uk)?$gettingFirst->button_text_uk:$gettingFirst->button_text_ru?></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <section id="fh5co-testimony" data-section="testimony">
     <div class="container">
         <div class="row">
@@ -234,15 +243,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 to-animate">
-                <h3 id="header-clock">ПРОПОЗИЦІЯ ДІЄ</h3>
+                <h3 id="header-clock"><?=$getSecond['timerTitle']?></h3>
                 <div id="CDT"></div>
-                <h3>КОНСУЛЬТАЦІЯ про вимоги до знання польскої мови в ДЕРЖАВНИХ УНШВЕРСИТЕТАХ ПОЛЬЩІ</h3>
-                <p>рівень знання мови у вибраному Вами Університеті, умови проведення співбесід,
-                    порядок проведення єкзаменів та ін.</p>
+                <h3><?=$getSecond['title']?></h3>
+                <p><?=$getSecond['disc']?></p>
             </div>
             <div class="col-md-6 to-animate-2">
                 <div class="call-to-action text-right">
-                    <a href="#" class="sign-up">Я хочу отримати БЕЗКОШТОВНУ КОНСУЦЛЬТАЦІЮ ЗАТЕЛЕФОНУЙТЕ МЕНІ протягом 30 секунд</a>
+                    <a href="#" class="sign-up"><?=$getSecond['buttonText']?></a>
                 </div>
             </div>
         </div>
@@ -254,10 +262,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Плани, побудовані для кожного</h2>
+                    <h2 class="to-animate"><?=$loc == 'uk'?$tariffs->title_uk:$tariffs->title_ru?></h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Доступ до "My StudentWay" - додаткові заняття, відеотека, лекції з математики, фізики, хімії, економики і багато чого іншому.</h3>
+                            <h3 class="to-animate"><?=$loc == 'uk'?$tariffs->disc_uk:$tariffs->disc_ru?></h3>
                         </div>
                     </div>
                 </div>
@@ -265,52 +273,21 @@
 
             <div class="row">
                 <div class="pricing">
+                    <?php foreach ($listTariffs as $list):?>
                     <div class="col-md-4">
                         <div class="price-box to-animate-2 popular">
-                            <h2 class="pricing-plan pricing-plan-offer">Безкоштовний<span>Best Offer</span></h2>
-                            <div class="price"><sup class="currency">$</sup>0<small>/month</small></div>
+                            <h2 class="pricing-plan pricing-plan-offer"><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h2>
+                            <div class="price"><sup class="currency">грн</sup><?=$list->cost?><small>/<?=$loc=='uk'?'місяць':'меcяц'?></small></div>
                             <ul>
-                                <li><p><i class="icon-check2"></i>Польський для абітурієнтів.</p></li>
-                                <li><p><i class="icon-check2"></i>1 місяць. Пробний курс.</p></li>
-                                <li><p><i class="icon-check2"></i>Доступ до даних протягом одного місяця.</p></li>
+                                <?php foreach ($lisListTariffs[$list->id] as $listList):?>
+                                <li><p><i class="icon-check2"></i><?=$loc == 'uk'?$listList->text_uk:$listList->text_ru?></p></li>
+                                <?php endforeach;?>
                             </ul>
-                            <p> </p>
-                            <!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="price-box to-animate-2">
-                            <h2 class="pricing-plan">Базовий</h2>
-                            <div class="price"><sup class="currency">Грн</sup>650<small>/месяц</small></div>
-                            <ul>
-                                <li><p><i class="icon-check2"></i>  Польський для абітурієнтів вступників в приватні або державні вузи.</p></li>
-                                <li><p><i class="icon-check2"></i>1 рік. Гарантований рівень В1.</p></li>
-                                <li><p><i class="icon-check2"></i>2 заняття в тиждень по 90 хв. Графік: 16:00 - 17:30 або 18:00 - 19:30.</p></li>
-                            </ul>
-<!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="price-box to-animate-2">
-                            <h2 class="pricing-plan">Розширений</h2>
-                            <div class="price"><sup class="currency">Грн</sup>650<small>/month</small></div>
-                            <ul>
-                                <li><p><i class="icon-check2"></i>Польський для абітурієнтів вступників в державні вузи, на безкоштовні програми</p></li>
-                                <li><p><i class="icon-check2"></i>2 роки. Гарантований рівень В2.</p></li>
-                                <li><p><i class="icon-check2"></i>2 заняття в тиждень по 90 хв. Графік: 16:00 - 17:30 або 18:00 - 19:30.</p></li>
-                            </ul>
-<!--                            <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a>-->
-                        </div>
-                    </div>
+                    <?php endforeach;?>
                 </div>
             </div>
-
-<!--            <div class="row">-->
-<!--                <div class="col-md-6 col-md-offset-3 to-animate">-->
-<!--                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <a href="#">Learn More</a></p>-->
-<!--                </div>-->
-<!--            </div>-->
 
         </div>
     </div>
@@ -319,126 +296,52 @@
     <div class="container">
         <div class="row">
             <div class="to-animate">
-                <h3 class="text-center">Вывчаючи ПОЛЬСЬКУ зі StudentWay ВЫ ОТРИМУЄТЕ</h3>
+                <h3 class="text-center"><?=($loc =='uk')?$gettingThird->title_uk:$gettingThird->title_ru?></h3>
+                <?php foreach ($listGettingThird as $list):?>
                 <div class="col-md-2 text-center">
                     <div class="col-md-9">
-                        <img src="/images/get_1.png" class="img-responsive" alt="images">
-                        <p>КУРС ПОЛЬСЬКОХЇ мови на рівень В1/В2</p>
+                        <img src="/images/<?=$list->image?>" class="img-responsive" alt="images">
+                        <p><?=$loc == 'uk'?$list->text_uk:$list->text_ru?></p>
                     </div>
                     <div class="col-md-3">
-                        <img src="/images/red-plus-md.png" alt="plus">
+                        <img src="/images/<?=$list->isLast==1?'micr.png':'red-plus-md.png'?>" alt="plus">
                     </div>
                 </div>
+                <?php endforeach;?>
+
                 <div class="col-md-2 text-center">
-                    <div class="col-md-9">
-                        <img src="/images/get_2.png" class="img-responsive" alt="images">
-                        <p>КУРС РОЗМОВНИЙ ПОЛЬСЬКИЙ</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="/images/red-plus-md.png" alt="plus">
-                    </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <div class="col-md-9">
-                        <img src="/images/get_3.png" class="img-responsive" alt="images">
-                        <p>КУРС ІСТОРІЯ і КУЛЬТУРА ПОЛЬЩІ</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="/images/red-plus-md.png" alt="plus">
-                    </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <div class="col-md-9">
-                        <img src="/images/get_4.png" class="img-responsive" alt="images">
-                        <p>СПЕЦКУРСИ математика, фізики та ін</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="/images/red-plus-md.png" alt="plus">
-                    </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <div class="col-md-9">
-                        <img src="/images/get_5.png" class="img-responsive" alt="images">
-                        <p>ДОСТУП до мультимедійної бібліотеки</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="/images/micr.png" alt="plus">
-                    </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <h3>650<br>грн/міс</h3>
+                    <h3><?=$gettingThird->cost?><br>грн/<?=$loc == 'uk'?'міс':'мес'?></h3>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<section id="fh5co-services" data-section="services">
+<section id="fh5co-services" data-section="services" class="hidden-xs">
     <div class="fh5co-services">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Ми пропонуємо послуги</h2>
+                    <h2 class="to-animate"><?= $loc == 'uk'?$services->header_title_ua:$services->header_title_ru?></h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Наше завдання полягає в тому, щоб ви вивчили польську мову на відмінно.<br> Разом зі StudentWay це МОЖЛИВО!!! </h3>
+                            <h3 class="to-animate"><?= $loc == 'uk'?$services->disc_uk:$services->disc_ru?></h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
+                <?php foreach ($listServices as $list):?>
                 <div class="col-md-4">
                     <div class="box-services">
-                        <i class="icon-people to-animate-2"></i>
+                        <i class="<?=$list->image?> to-animate-2"></i>
                         <div class="fh5co-post to-animate">
-                            <h3>Викладачі</h3>
-                            <p>Солідний досвід наших викладачів (так, у нас працюють не вчорашні випускники польських університетів, а викладачі з солідним досвідом).</p>
-                        </div>
-                    </div>
-
-                    <div class="box-services">
-                        <i class="icon-rocket to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Заходы</h3>
-                            <p>Проведення клубів розмовної польської мови (для можливості практикуватися в усному мовленні). Проведення інтерактивних заходів, присвячених знаменним подіям або польським святам.</p>
+                            <h3><?=$loc=='uk'?$list->block_title_uk:$list->block_title_ru?></h3>
+                            <p><?=$loc=='uk'?$list->text_uk:$list->text_ru?></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="box-services">
-                        <i class="icon-layers2 to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Методика</h3>
-                            <p>Унікальна методика викладання (розробки наших викладачів). Використання в процесі навчання підручників різних авторів (що дозволяє робити матеріал більш різноманітним).</p>
-                        </div>
-                    </div>
-
-                    <div class="box-services">
-                        <i class="icon-file-excel-o to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Граматика</h3>
-                            <p>Максимальне занурення у вивчення граматики (це важливо, тому що студенти навчатимуться на польською мовою і здавати заліки та іспити; безграмотні фахівці навряд чи будуть затребувані).</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box-services">
-                        <i class="icon-book to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Ресурси</h3>
-                            <p>Доступ учнів до бібліотеки польських книг і видань. Унікальна колекція фільмів і аудіо матеріалів польською мовою, які надаються нашим учням абсолютно безкоштовно.</p>
-                        </div>
-                    </div>
-
-                    <div class="box-services">
-                        <i class="icon-upload to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3>Додатково</h3>
-                            <p>Використання мультимедійного обладнання під час занять (аудіо та відео супровід кожного заняття). Додаткові безкоштовні заняття, в т.ч. і по спецпредметам (фізика, хімія, математика, історія, географія та ін.).</p>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach;?>
             </div>
-<!--            <div class="call-to-action text-center to-animate"><a href="#" class="btn btn-learn">Learn More</a></div>-->
         </div>
     </div>
 </section>
@@ -446,12 +349,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 to-animate">
-                <h3>ОТРИМАТИ доступ до системи "My StudentWay"</h3>
-                <p>на протязі місяця користуючись ЗАКРИТИМИ ресурсами сайту studentway.org.ua</p>
+                <h3><?=$loc=='uk'?$gettingFourth->title_uk:$gettingFourth->title_ru?></h3>
+                <p><?=$loc=='uk'?$gettingFourth->disc_uk:$gettingFourth->disc_ru?></p>
             </div>
             <div class="col-md-4 to-animate-2">
                 <div class="call-to-action text-right">
-                    <a href="#" class="sign-up">ОТРИМАТИ ДОСТУП <b>БЕЗКОШТОВНО</b></a>
+                    <a href="#" class="sign-up"><?=$loc=='uk'?$gettingFourth->button_text_uk:$gettingFourth->button_text_ru?></a>
                 </div>
             </div>
         </div>
@@ -462,181 +365,71 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Знайомтеся з командою</h2>
+                    <h2 class="to-animate"><?=$loc == 'uk'?$team->header_title_uk:$team->header_title_ru?></h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Наші викладачі знають всі особливості викладання польської для успішного старту в вищих навчальних закладах Польщі. </h3>
+                            <h3 class="to-animate"><?=$loc == 'uk'?$team->disc_uk:$team->disc_ru?></h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
+                <?php foreach ($listTeam as $list):?>
                 <div class="col-md-3">
                     <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/person5.jpg" alt="Коваленко Олег"></div>
-                        <h3>Коваленко Олег</h3>
-                        <span class="position">Директор агенціі StudentWay</span>
-                        <p>Величезний досвід роботи
-                            в освіті
-                            закінчів аспірантуру, захистив
-                            диссертацію, працював
-                            доцентом в ДХТУ, директором філії
-                            Інститута сучасних професій,
-                            керівником Японського центру,
-                            начальником учбового центру АТБ,
-                            начальником учбового центру Дніпропетровск-Авто</p>
-                        <ul class="social-media">
-                            <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-                            <li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-                            <li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-                        </ul>
+                        <div class="user"><img class="img-reponsive" src="/images/<?=$list->image?>" alt="Коваленко Олег"></div>
+                        <h3><?=$loc == 'uk'?$list->full_name_uk:$list->full_name_ru?></h3>
+                        <span class="position"><?=$loc == 'uk'?$list->post_uk:$list->post_ru?></span>
+                        <p><?=$loc == 'uk'?$list->text_uk:$list->text_ru?></p>
                     </div>
                 </div>
-
-                <div class="col-md-3">
-                    <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/person6.jpg" alt="Roger Garfield"></div>
-                        <h3>Максименко Юлия</h3>
-                        <span class="position">Менеджер відділу</span>
-                        <p>Магістр, працюе в команді
-                            понад 3 роки.
-                            Займаеться всіми питаннями організації
-                            вивчення мови
-                            від реклами, узгодження розкладу занять
-                            до формування програм навчання
-                            в нових групах.</p>
-                        <ul class="social-media">
-                            <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-                            <li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-                            <li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/person8.jpg" alt="Roger Garfield"></div>
-                        <h3>Проскуровська Ніна</h3>
-                        <span class="position">Старший викладач польскої</span>
-                        <p>Має понад 1000 учнів,
-                            які успішно пройшли іспити
-                            і зараз навчаются у державних
-                            і приватних Університетах Польщі.
-                            Постіно працює над розробкою новітніх
-                            методик навчання и втілює їх у
-                            своїх уроках.
-                            Працює в агенції з дня її засновання.</p>
-                        <ul class="social-media">
-                            <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-                            <li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-                            <li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/person7.jpg" alt="Roger Garfield"></div>
-                        <h3>Коноваленко Наталія</h3>
-                        <span class="position">Викладач польскої мови</span>
-                        <p>Навчалась і жила в Польщі протягом 3 років.
-                            Дипломований фахівец,
-                            втілюючий в життя новітні технології
-                            навчання і Європейський досвід
-                            в Україні.</p>
-                        <ul class="social-media">
-                            <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-                            <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-                            <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
-                            <li><a href="#" class="codepen"><i class="icon-codepen"></i></a></li>
-                            <li><a href="#" class="github"><i class="icon-github-alt"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                <?php endforeach;?>
             </div>
         </div>
     </div>
 </section>
 
-<section id="fh5co-faq" data-section="faq">
+<section id="fh5co-faq" data-section="faq" class="hidden-xs">
     <div class="fh5co-faq">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate">Загальні питання</h2>
+                    <h2 class="to-animate"><?=$loc=='uk'?$question->header_title_uk:$question->header_title_ru?></h2>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate">Все, що потрібно знати, перш ніж почати</h3>
+                            <h3 class="to-animate"><?=$loc=='uk'?$question->disc_uk:$question->disc_ru?></h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
+                <?php foreach ($listQuestion as $list):?>
                 <div class="col-md-6">
                     <div class="box-faq to-animate-2">
-                        <h3>Методика навчання. Основні питання</h3>
+                        <h3><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h3>
                         <ul>
-                            <li><i class="icon-question"></i>Яка методика навчання використовується?</li>
-                            <li><i class="icon-question"></i>Скільки треба часу, щоб заговорити польською, якщо займатися "з нуля"?</li>
-                            <li><i class="icon-question"></i>Чи зможу я вільно спілкуватися по закінченню курсів?</li>
-                            <li><i class="icon-question"></i>Як ви тестуєте нових студентів перед початком навчання?</li>
-                            <li class="call-to-action"><a data-toggle="modal" data-target="#methodology">Відповіді</a></li>
+                            <?php foreach ($lisListQuestion[$list->id] as $listList):?>
+                            <li><i class="icon-question"></i><?=$loc=='uk'?$listList->text_uk:$listList->text_ru?></li>
+                            <?php endforeach;?>
+                            <li class="call-to-action"><a data-toggle="modal" data-target="#<?=$list->id?>"><?=$loc == 'uk'?$list->button_text_uk:$list->button_text_ru?></a></li>
                         </ul>
-
-                    </div>
-                    <div class="box-faq to-animate-2">
-                        <h3>Сертифікати та іспити.</h3>
-                        <ul>
-                            <li><i class="icon-question"></i>Чи видається сертифікат після закінчення навчання?</li>
-                            <li><i class="icon-question"></i> Ви готуєте студентів до здачі іспитів в Польщі?</li>
-                            <li class="call-to-action"><a data-toggle="modal" data-target="#сertificates">Відповіді</a></li>
-                        </ul>
-
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="box-faq to-animate-2">
-                        <h3>Фінанси. Основні питання.</h3>
-                        <ul>
-                            <li><i class="icon-question"></i>Як робиться оплата? </li>
-                            <li><i class="icon-question"></i>Йде перерахунок за кожне пропущене зайняття?</li>
-                            <li><i class="icon-question"></i>Є у вас індивідуальне зайняття?</li>
-                            <li><i class="icon-question"></i>Чи міняється оплата на курсах в впродовж року</li>
-                            <li><i class="icon-question"></i>Чи є пільги?</li>
-                            <li class="call-to-action"><a data-toggle="modal" data-target="#finance"><span>Відповіді</span></a></li>
-                        </ul>
-
-                    </div>
-                    <div class="box-faq to-animate-2">
-                        <h3>Основні організаційні питання</h3>
-                        <ul>
-                            <li><i class="icon-question"></i>Як записатися на курси?</li>
-                            <li><i class="icon-question"></i>Якщо, раптом, я не зможу потрапити на заняття, що мені треба робити?</li>
-                            <li class="call-to-action"><a data-toggle="modal" data-target="#organizational"><span>Відповіді</span></a></li>
-                        </ul>
-
-                    </div>
-                </div>
+                <?php endforeach;?>
             </div>
         </div>
     </div>
 </section>
+
 <div class="getting-started getting-started-1">
     <div class="container">
         <div class="row">
             <div class="col-md-8 to-animate">
-                <h3>Якщо є питання ЗАДАВАЙ, ми обов'язково відповімо</h3>
+                <h3><?=$loc=='uk'?$gettingFifth->title_uk:$gettingFifth->title_ru?></h3>
             </div>
             <div class="col-md-4 to-animate-2">
                 <div class="call-to-action text-right">
-                    <a href="#" class="sign-up">Задати ПИТАННЯ</a>
+                    <a href="#" class="sign-up"><?=$loc=='uk'?$gettingFifth->button_text_uk:$gettingFifth->button_text_ru?></a>
                 </div>
             </div>
         </div>
@@ -648,7 +441,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h3 class="to-animate">Наші сертифікати визнються більше ніж в 50 університетах Польщі</h3>
+                    <h3 class="to-animate"><?=$loc=='uk'?$partners->header_title_uk:$partners->header_title_ru?></h3>
                 </div>
             </div>
             <div class="row">
@@ -789,9 +582,75 @@
                 </div>
             </div>
             <div class="col-md-12 text-center">
-                <h3 class="to-animate">Кожен університет може проводити додаткові співбесіди при вступі.</h3>
+                <h3 class="to-animate"><?=$loc=='uk'?$partners->bottom_title_uk:$partners->bottom_title_ru?></h3>
             </div>
         </div>
     </div>
 </section>
+
+<div id="fh5co-footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 to-animate">
+                <h3 class="section-title"><?=$loc=='uk'?$footer->aboutus_title_uk:$footer->aboutus_title_ru?></h3>
+                <p><?=$loc=='uk'?$footer->about_text_uk:$footer->about_text_ru?></p>
+                <p class="copy-right"><?=$loc=='uk'?$footer->copyright_uk:$footer->copyright_ru?><br>
+                </p>
+            </div>
+
+            <div class="col-md-4 to-animate">
+                <h3 class="section-title"><?=$loc=='uk'?$footer->address_title_uk:$footer->address_title_ru?></h3>
+                <ul class="contact-info">
+                    <li><i class="icon-map-marker"></i><?=$loc=='uk'?$footer->address_text_uk:$footer->address_text_ru?></li>
+                    <li><i class="icon-phone"></i><?=$footer->phone_number?></li>
+                    <li><i class="icon-envelope"></i><a href="#"><?=$footer->email?></a></li>
+                    <li><i class="icon-globe2"></i><a href="#"><?=$footer->site?></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 to-animate">
+                <h3 class="section-title for-email"><?=$loc=='uk'?$footer->form_title_uk:$footer->form_title_ru?></h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="sr-only"><?=$loc=='uk'?'ім\'я':'Имя'?></label>
+                        <input type="name" class="form-control" id="name" placeholder="<?=$loc=='uk'?'ім\'я':'Имя'?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="sr-only"><?=$loc=='uk'?'Повідомлення':'Сообщение'?></label>
+                        <textarea class="form-control" id="message" rows="7" placeholder="<?=$loc=='uk'?'Повідомлення':'Сообщение'?>"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="<?=$loc=='uk'?'Відправити повідомлення':'Отправить сообщение'?>">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php foreach ($listQuestion as $list):?>
+<div class="modal fade" id="<?=$list->id?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel"><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h3>
+            </div>
+            <div class="modal-body">
+                <?php foreach ($listModalQuestion[$list->id] as $listList):?>
+                <h4 class="page-header"><?=$loc =='uk'?$listList->title_uk:$listList->title_ru?></h4>
+                <p><?=$loc =='uk'?$listList->text_uk:$listList->text_ru?></p>
+                <?php endforeach;?>
+            </div>
+            <div class="modal-footer">
+                <a type="button" class="call-to-action" data-dismiss="modal"><?=$loc=='uk'?'Закрити':'Закрыть'?></a>
+            </div>
+        </div>
+    </div>
+</div>
+<?php endforeach;?>
+
 
