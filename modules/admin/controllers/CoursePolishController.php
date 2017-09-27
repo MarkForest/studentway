@@ -1,9 +1,14 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: mark
+ * Date: 27.09.17
+ * Time: 2:28
+ */
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
 
-use app\models\AskQuestionForm;
 use app\models\Assurance;
 use app\models\Footer;
 use app\models\GettingFifth;
@@ -23,57 +28,31 @@ use app\models\ListQuestion;
 use app\models\ListServices;
 use app\models\ListTariffs;
 use app\models\ListTeam;
-use app\models\ModalQuestion;
 use app\models\Partners;
 use app\models\Privilege;
 use app\models\Question;
-use app\models\RecordsForm;
 use app\models\Services;
 use app\models\Tariffs;
 use app\models\Team;
 use Yii;
-use yii\web\AssetBundle;
 use yii\web\Controller;
 
 class CoursePolishController extends Controller
 {
-    public $layout = "courses";
+    public function actionIndex($reg = 'dp'){
 
-    public function actionAskQuestion(){
-        $model = new AskQuestionForm();
-        if (Yii::$app->request->isAjax){
-            $model->load(Yii::$app->request->post());
-            $model->status=0;
-            return ($model->validate() && $model->addQuestion());
-        }
-    }
 
-    public function actionIndex($reg='dp',$loc='uk')
-    {
+        if($reg=='dp')$drop = 'Дніпро (UK)';
+        if($reg=='ky')$drop = 'Київ (UK)';
+        if($reg=='kh')$drop = 'Харьків (UK)';
+        if($reg=='vn')$drop = 'Вінниця (UK)';
+        if($reg=='kv')$drop = 'Кропівницький (UK)';
+        if($reg=='km')$drop = 'Кременчуг (UK)';
+        if($reg=='iz')$drop = 'Ізмаил (UK)';
+        if($reg=='od')$drop = 'Одесса (UK)';
+        if($reg=='bc')$drop = 'Біла Церква (UK)';
+        if($reg=='sl')$drop = 'Cлов\'янськ (UK)';
 
-        $model = new RecordsForm;
-        $modelAsk = new AskQuestionForm;
-
-        if($reg=='dp'&& $loc=='uk')$drop = 'Дніпро (UK)';
-        if($reg=='dp'&& $loc=='ru')$drop = 'Днепр (RU)';
-        if($reg=='ky'&& $loc=='uk')$drop = 'Київ (UK)';
-        if($reg=='ky'&& $loc=='ru')$drop = 'Киев  (RU)';
-        if($reg=='kh'&& $loc=='uk')$drop = 'Харьків (UK)';
-        if($reg=='kh'&& $loc=='ru')$drop = 'Харьков (RU)';
-        if($reg=='vn'&& $loc=='uk')$drop = 'Вінниця (UK)';
-        if($reg=='vn'&& $loc=='ru')$drop = 'Винница (RU)';
-        if($reg=='kv'&& $loc=='uk')$drop = 'Кропівницький (UK)';
-        if($reg=='kv'&& $loc=='ru')$drop = 'Кропивницкий (RU)';
-        if($reg=='km'&& $loc=='uk')$drop = 'Кременчуг (UK)';
-        if($reg=='km'&& $loc=='ru')$drop = 'Кременчук (RU)';
-        if($reg=='iz'&& $loc=='uk')$drop = 'Ізмаил (UK)';
-        if($reg=='iz'&& $loc=='ru')$drop = 'Измаил (RU)';
-        if($reg=='od'&& $loc=='uk')$drop = 'Одесса (UK)';
-        if($reg=='od'&& $loc=='ru')$drop = 'Одесса (RU)';
-        if($reg=='bc'&& $loc=='uk')$drop = 'Біла Церква (UK)';
-        if($reg=='bc'&& $loc=='ru')$drop = 'Белая Церковь (RU)';
-        if($reg=='sl'&& $loc=='uk')$drop = 'Cлов\'янськ (UK)';
-        if($reg=='sl'&& $loc=='ru')$drop = 'Славянск (RU)';
 
 
         //шапка сайта Home
@@ -87,28 +66,12 @@ class CoursePolishController extends Controller
         //Гарантии
         $assurance = Assurance::findOne(['region_key'=>$reg]);
         $listAssurance = ListAssurance::find()->where(['assurance_id'=>$assurance->id])->all();
+
         //Первый Синий блок
-        if($loc=='uk')
-            $gettingFirst = GettingFirst::find()->select(['disc_uk','button_text_uk'])->where(['region_key'=>$reg])->one();
-        else
-            $gettingFirst = GettingFirst::find()->select(['disc_ru','button_text_ru'])->where(['region_key'=>$reg])->one();
+        $gettingFirst = GettingFirst::find()->where(['region_key'=>$reg])->one();
 
         //Второй Синий блок
         $gettingSecond = GettingSecond::findOne(['region_key'=>$reg]);
-        if($loc=='uk')
-            $getSecond = [
-                'timerTitle'=>$gettingSecond->timer_title_uk,
-                'title'=>$gettingSecond->title_uk,
-                'disc'=>$gettingSecond->disc_uk,
-                'buttonText'=>$gettingSecond->button_text_uk,
-            ];
-        else
-            $getSecond = [
-                'timerTitle'=>$gettingSecond->timer_title_ru,
-                'title'=>$gettingSecond->title_ru,
-                'disc'=>$gettingSecond->disc_ru,
-                'buttonText'=>$gettingSecond->button_text_ru,
-            ];
 
 
         //Тарифы
@@ -168,12 +131,6 @@ class CoursePolishController extends Controller
         //Ajax
 
 
-        if (Yii::$app->request->isAjax){
-            $model->load(Yii::$app->request->post());
-            $model->status=0;
-            return ($model->validate() && $model->addRecord());
-        }
-
 
         return $this->render('index',[
 
@@ -185,7 +142,7 @@ class CoursePolishController extends Controller
             'assurance' =>$assurance,
             'listAssurance'=>$listAssurance,
             'gettingFirst'=>$gettingFirst,
-            'getSecond'=>$getSecond,
+            'gettingSecond'=>$gettingSecond,
             'tariffs'=>$tariffs,
             'listTariffs'=>$listTariffs,
             'lisListTariffs'=>$lisListTariffs,
@@ -203,10 +160,6 @@ class CoursePolishController extends Controller
             'gettingFifth'=>$gettingFifth,
             'partners' => $partners,
             'footer'=>$footer,
-            'loc'=>$loc,
-            'reg'=>$reg,
-            'model'=>$model,
-            'modelAsk'=>$modelAsk,
         ]);
     }
 

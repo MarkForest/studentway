@@ -573,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mt .col-md-4 .block-garant{
   border: 1px solid #1fb5f6;
-  width: 230px;
+  width: 250px;
   height: 350px;
   padding: 10px;
   color: #fff;
@@ -752,6 +752,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
   -o-box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
   box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 @media screen and (max-width: 992px) {
   .getting-started .call-to-action a.sign-up {
@@ -865,6 +866,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fh5co-services .fh5co-post {
   padding-left: 75px;
+  max-height: 155px;
 }
 .fh5co-services .fh5co-post h3 {
   font-size: 20px;
@@ -1568,3 +1570,58 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ff3b30;
   color: #fff;
 }
+
+
+
+
+/*==========================*/
+/* Модальные окна и Алерты*/
+/*++++++++++++++++++++++++++*/
+button{
+  background: #fff;
+}
+
+.modal-footer{
+  background: url('/images/logo_bell_org_modal.png') no-repeat;
+  background-position: bottom left 15px;
+}
+
+.modal-body{
+  font-size: 16px;
+}
+
+.modal-header{
+  background: #0799d2;
+}
+
+.modal-header h3{
+  color:#FFF;
+}
+
+.modal-body label{
+  color: #040032;
+  font-weight: normal;
+}
+
+.modal-body input,.modal-body textarea{
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom: 1px solid #0799d2;
+}
+
+.alert{
+  position: fixed;
+  margin-top:0px;
+  top:60px;
+  z-index: 50;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  display: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+

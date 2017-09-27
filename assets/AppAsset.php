@@ -26,7 +26,7 @@ class AppAsset extends AssetBundle
         'css/style.css',
     ];
     public $js = [
-        'js/jquery.min.js',
+//        'js/jquery.min.js',
         'js/bootstrap.min.js',
         'js/modernizr-2.6.2.min.js',
         'js/jquery.easing.1.3.js',
@@ -37,6 +37,7 @@ class AppAsset extends AssetBundle
         'js/google_map.js',
         'js/main.js',
         'js/countdown.js',
+        'js/sendForms.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

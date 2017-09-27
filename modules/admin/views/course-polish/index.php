@@ -21,8 +21,6 @@ use yii\widgets\ActiveForm;
                     <li><a href="#" data-nav-section="testimony"><span><?=$loc=='uk'?'Відгуки':'Отзывы'?></span></a></li>
                     <li><a href="#" data-nav-section="pricing"><span><?=$loc=='uk'?'Ціни':'Цены'?></span></a></li>
                     <li><a href="#" data-nav-section="team"><span><?=$loc=='uk'?'Наші спеціолісти':'Наши специолисты'?></span></a></li>
-<!--                    <li><a href="#" data-nav-section="faq"><span>Питання</span></a></li>-->
-<!--                    <li class="call-to-action"><a href="#"><span>Uk</span></a></li>-->
                 </ul>
 
             </div>
@@ -79,21 +77,21 @@ use yii\widgets\ActiveForm;
             <div class="col-md-7 home-content-text-block">
                 <h1><?=$loc=='uk'?$home->title_uk:$home->title_ru?></h1>
                 <?php if (isset($listHome)):?>
-                <ul>
-                    <?php foreach ($listHome as $list):?>
-                    <li><i class="icon-check2"></i><?=$loc=='uk'?$list->text_uk:$list->text_ru?></li>
-                    <?php endforeach;?>
-                </ul>
+                    <ul>
+                        <?php foreach ($listHome as $list):?>
+                            <li><i class="icon-check2"></i><?=$loc=='uk'?$list->text_uk:$list->text_ru?></li>
+                        <?php endforeach;?>
+                    </ul>
                 <?php endif;?>
             </div>
 
             <div class="col-md-5 home-content-text-block">
-               <div class="stock-block">
-                   <p><?=$loc=='uk'?$home->stock_content_uk:$home->stock_content_ru?></p>
-               </div>
-               <div class="cast hidden-xs">
-                   <p><?=$home->cost?><span>грн</span> </p>
-               </div>
+                <div class="stock-block">
+                    <p><?=$loc=='uk'?$home->stock_content_uk:$home->stock_content_ru?></p>
+                </div>
+                <div class="cast hidden-xs">
+                    <p><?=$home->cost?><span>грн</span> </p>
+                </div>
                 <a href="#fh5co-footer">
                     <div class="cast-button">
                         <p><?=$loc=='uk'?$home->button_text_uk:$home->button_text_ru?></p>
@@ -130,7 +128,7 @@ use yii\widgets\ActiveForm;
                         <h3><?=$loc=='uk'?$privilege->title_list_uk:$privilege->title_list_ru?></h3>
                         <ul class="list-nav">
                             <?php foreach ($listPrivilege as $list):?>
-                            <li><i class="icon-check2"></i><?=$loc=='uk'?$list->text_uk:$list->text_ru?></li>
+                                <li><i class="icon-check2"></i><?=$loc=='uk'?$list->text_uk:$list->text_ru?></li>
                             <?php endforeach;?>
                         </ul>
                     </div>
@@ -144,37 +142,37 @@ use yii\widgets\ActiveForm;
 
     <div class="fh5co-explore fh5co-explore-bg-color">
         <div class="bg-text">
-        <div class="container">
-            <div class="col-md-12 section-heading text-center">
-                <h2 class="to-animate text-center"><?=$loc=='uk'?$assurance->main_title_uk:$assurance->main_title_ru?></h2>
-            </div>
-            <div class="row">
-                <div class="header-block-explore to-animate-3">
-                    <div class="col-md-2 col-md-offset-3">
-                        <h3 class=""><?=$loc=='uk'?$assurance->disc_title_uk:$assurance->disc_title_ru?></h3>
-                        <img src="/images/icon_3373.png" alt="students" class="">
-                    </div>
-                    <div class="col-md-5">
-                        <h3><?=$loc=='uk'?$assurance->disc_text_uk:$assurance->disc_text_ru?></h3>
-                    </div>
+            <div class="container">
+                <div class="col-md-12 section-heading text-center">
+                    <h2 class="to-animate text-center"><?=$loc=='uk'?$assurance->main_title_uk:$assurance->main_title_ru?></h2>
                 </div>
-            </div>
-            <div class="row">
-                <div class="">
-                    <div class="mt">
-                        <?php foreach ($listAssurance as $list):?>
-                        <div class="col-md-4 to-animate-3 text-center">
-                            <div class="block-garant center-block">
-                                <div class="text-garant">
-                                    <p><?=$loc=='uk'?$list->text_uk:$list->text_ru?></p>
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="header-block-explore to-animate-3">
+                        <div class="col-md-2 col-md-offset-3">
+                            <h3 class=""><?=$loc=='uk'?$assurance->disc_title_uk:$assurance->disc_title_ru?></h3>
+                            <img src="/images/icon_3373.png" alt="students" class="">
                         </div>
-                        <?php endforeach;?>
+                        <div class="col-md-5">
+                            <h3><?=$loc=='uk'?$assurance->disc_text_uk:$assurance->disc_text_ru?></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="">
+                        <div class="mt">
+                            <?php foreach ($listAssurance as $list):?>
+                                <div class="col-md-4 to-animate-3 text-center">
+                                    <div class="block-garant center-block">
+                                        <div class="text-garant">
+                                            <p><?=$loc=='uk'?$list->text_uk:$list->text_ru?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach;?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 </section>
@@ -251,9 +249,9 @@ use yii\widgets\ActiveForm;
             <div class="col-md-6 to-animate-2">
                 <h3><?=$getSecond['title']?></h3>
                 <p><?=$getSecond['disc']?></p>
-<!--                <div class="call-to-action text-right">-->
-<!--                    <a href="#" class="sign-up">--><?//=$getSecond['buttonText']?><!--</a>-->
-<!--                </div>-->
+                <!--                <div class="call-to-action text-right">-->
+                <!--                    <a href="#" class="sign-up">--><?//=$getSecond['buttonText']?><!--</a>-->
+                <!--                </div>-->
             </div>
         </div>
     </div>
@@ -276,17 +274,17 @@ use yii\widgets\ActiveForm;
             <div class="row">
                 <div class="pricing">
                     <?php foreach ($listTariffs as $list):?>
-                    <div class="col-md-4">
-                        <div class="price-box to-animate-2 popular">
-                            <h2 class="pricing-plan pricing-plan-offer"><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h2>
-                            <div class="price"><sup class="currency">грн</sup><?=$list->cost?><small>/<?=$loc=='uk'?'місяць':'меcяц'?></small></div>
-                            <ul>
-                                <?php foreach ($lisListTariffs[$list->id] as $listList):?>
-                                <li><p><i class="icon-check2"></i><?=$loc == 'uk'?$listList->text_uk:$listList->text_ru?></p></li>
-                                <?php endforeach;?>
-                            </ul>
+                        <div class="col-md-4">
+                            <div class="price-box to-animate-2 popular">
+                                <h2 class="pricing-plan pricing-plan-offer"><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h2>
+                                <div class="price"><sup class="currency">грн</sup><?=$list->cost?><small>/<?=$loc=='uk'?'місяць':'меcяц'?></small></div>
+                                <ul>
+                                    <?php foreach ($lisListTariffs[$list->id] as $listList):?>
+                                        <li><p><i class="icon-check2"></i><?=$loc == 'uk'?$listList->text_uk:$listList->text_ru?></p></li>
+                                    <?php endforeach;?>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -300,15 +298,15 @@ use yii\widgets\ActiveForm;
             <div class="to-animate">
                 <h3 class="text-center"><?=($loc =='uk')?$gettingThird->title_uk:$gettingThird->title_ru?></h3>
                 <?php foreach ($listGettingThird as $list):?>
-                <div class="col-md-2 text-center">
-                    <div class="col-md-9">
-                        <img src="/images/<?=$list->image?>" class="img-responsive" alt="images">
-                        <p><?=$loc == 'uk'?$list->text_uk:$list->text_ru?></p>
+                    <div class="col-md-2 text-center">
+                        <div class="col-md-9">
+                            <img src="/images/<?=$list->image?>" class="img-responsive" alt="images">
+                            <p><?=$loc == 'uk'?$list->text_uk:$list->text_ru?></p>
+                        </div>
+                        <div class="col-md-3">
+                            <img src="/images/<?=$list->isLast==1?'micr.png':'red-plus-md.png'?>" alt="plus">
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <img src="/images/<?=$list->isLast==1?'micr.png':'red-plus-md.png'?>" alt="plus">
-                    </div>
-                </div>
                 <?php endforeach;?>
 
                 <div class="col-md-2 text-center">
@@ -333,15 +331,15 @@ use yii\widgets\ActiveForm;
             </div>
             <div class="row">
                 <?php foreach ($listServices as $list):?>
-                <div class="col-md-4">
-                    <div class="box-services">
-                        <i class="<?=$list->image?> to-animate-2"></i>
-                        <div class="fh5co-post to-animate">
-                            <h3><?=$loc=='uk'?$list->block_title_uk:$list->block_title_ru?></h3>
-                            <p><?=$loc=='uk'?$list->text_uk:$list->text_ru?></p>
+                    <div class="col-md-4">
+                        <div class="box-services">
+                            <i class="<?=$list->image?> to-animate-2"></i>
+                            <div class="fh5co-post to-animate">
+                                <h3><?=$loc=='uk'?$list->block_title_uk:$list->block_title_ru?></h3>
+                                <p><?=$loc=='uk'?$list->text_uk:$list->text_ru?></p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 <?php endforeach;?>
             </div>
         </div>
@@ -377,14 +375,14 @@ use yii\widgets\ActiveForm;
             </div>
             <div class="row">
                 <?php foreach ($listTeam as $list):?>
-                <div class="col-md-3">
-                    <div class="team-box text-center to-animate-2">
-                        <div class="user"><img class="img-reponsive" src="/images/<?=$list->image?>" alt="Коваленко Олег"></div>
-                        <h3><?=$loc == 'uk'?$list->full_name_uk:$list->full_name_ru?></h3>
-                        <span class="position"><?=$loc == 'uk'?$list->post_uk:$list->post_ru?></span>
-                        <p><?=$loc == 'uk'?$list->text_uk:$list->text_ru?></p>
+                    <div class="col-md-3">
+                        <div class="team-box text-center to-animate-2">
+                            <div class="user"><img class="img-reponsive" src="/images/<?=$list->image?>" alt="Коваленко Олег"></div>
+                            <h3><?=$loc == 'uk'?$list->full_name_uk:$list->full_name_ru?></h3>
+                            <span class="position"><?=$loc == 'uk'?$list->post_uk:$list->post_ru?></span>
+                            <p><?=$loc == 'uk'?$list->text_uk:$list->text_ru?></p>
+                        </div>
                     </div>
-                </div>
                 <?php endforeach;?>
             </div>
         </div>
@@ -406,17 +404,17 @@ use yii\widgets\ActiveForm;
             </div>
             <div class="row">
                 <?php foreach ($listQuestion as $list):?>
-                <div class="col-md-6">
-                    <div class="box-faq to-animate-2">
-                        <h3><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h3>
-                        <ul>
-                            <?php foreach ($lisListQuestion[$list->id] as $listList):?>
-                            <li><i class="icon-question"></i><?=$loc=='uk'?$listList->text_uk:$listList->text_ru?></li>
-                            <?php endforeach;?>
-                            <li class="call-to-action"><a data-toggle="modal" data-target="#<?=$list->id?>"><?=$loc == 'uk'?$list->button_text_uk:$list->button_text_ru?></a></li>
-                        </ul>
+                    <div class="col-md-6">
+                        <div class="box-faq to-animate-2">
+                            <h3><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h3>
+                            <ul>
+                                <?php foreach ($lisListQuestion[$list->id] as $listList):?>
+                                    <li><i class="icon-question"></i><?=$loc=='uk'?$listList->text_uk:$listList->text_ru?></li>
+                                <?php endforeach;?>
+                                <li class="call-to-action"><a data-toggle="modal" data-target="#<?=$list->id?>"><?=$loc == 'uk'?$list->button_text_uk:$list->button_text_ru?></a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 <?php endforeach;?>
             </div>
         </div>
@@ -438,158 +436,6 @@ use yii\widgets\ActiveForm;
     </div>
 </div>
 
-<section id="fh5co-trusted" data-section="trusted" class="hidden-xs">
-    <div class="fh5co-trusted">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 section-heading text-center">
-                    <h3 class="to-animate"><?=$loc=='uk'?$partners->header_title_uk:$partners->header_title_ru?></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/swps_logo.jpg" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/Pwr_poziom_pl.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/politechnika1.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/Politech.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/pjalogo.jpg" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/PGdansk.gif" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/ok_uw.jpg" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/lublin11.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/LogoUO light-1.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logoumfc.jpg" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo20.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo16.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo17.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo13.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo10.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo8.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo5.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo4.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo3.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo2(3).png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo2(2).png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo2.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo1(2).png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/logo1.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/images.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/ahe.png" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-2">
-                    <div class="partner-logo to-animate-2">
-                        <img src="/images/logos/1337025811.jpg" alt="Partners" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 text-center">
-                <h3 class="to-animate"><?=$loc=='uk'?$partners->bottom_title_uk:$partners->bottom_title_ru?></h3>
-            </div>
-        </div>
-    </div>
-</section>
-
 <div id="fh5co-footer" role="contentinfo">
     <div class="container">
         <div class="row">
@@ -609,97 +455,34 @@ use yii\widgets\ActiveForm;
                     <li><i class="icon-globe2"></i><a href="#"><?=$footer->site?></a></li>
                 </ul>
             </div>
-<!--            <div class="col-md-4 to-animate">-->
-<!--                <h3 class="section-title for-email">--><?//=$loc=='uk'?$footer->form_title_uk:$footer->form_title_ru?><!--</h3>-->
-<!--                <form class="contact-form">-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="name" class="sr-only">--><?//=$loc=='uk'?'ім\'я':'Имя'?><!--</label>-->
-<!--                        <input type="name" class="form-control" id="name" placeholder="--><?//=$loc=='uk'?'ім\'я':'Имя'?><!--">-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="email" class="sr-only">Email</label>-->
-<!--                        <input type="email" class="form-control" id="email" placeholder="Email">-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="message" class="sr-only">--><?//=$loc=='uk'?'Повідомлення':'Сообщение'?><!--</label>-->
-<!--                        <textarea class="form-control" id="message" rows="7" placeholder="--><?//=$loc=='uk'?'Повідомлення':'Сообщение'?><!--"></textarea>-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="--><?//=$loc=='uk'?'Відправити повідомлення':'Отправить сообщение'?><!--">-->
-<!--                    </div>-->
-<!--                </form>-->
-<!--            </div>-->
+
         </div>
     </div>
 </div>
 
 <?php foreach ($listQuestion as $list):?>
-<div class="modal fade" id="<?=$list->id?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="myModalLabel"><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h3>
-            </div>
-            <div class="modal-body">
-                <?php foreach ($listModalQuestion[$list->id] as $listList):?>
-                <h4 class="page-header"><?=$loc =='uk'?$listList->title_uk:$listList->title_ru?></h4>
-                <p><?=$loc =='uk'?$listList->text_uk:$listList->text_ru?></p>
-                <?php endforeach;?>
-            </div>
-            <div class="modal-footer">
-                <a type="button" class="call-to-action" data-dismiss="modal"><?=$loc=='uk'?'Закрити':'Закрыть'?></a>
+    <div class="modal fade" id="<?=$list->id?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel"><?=$loc=='uk'?$list->title_uk:$list->title_ru?></h3>
+                </div>
+                <div class="modal-body">
+                    <?php foreach ($listModalQuestion[$list->id] as $listList):?>
+                        <h4 class="page-header"><?=$loc =='uk'?$listList->title_uk:$listList->title_ru?></h4>
+                        <p><?=$loc =='uk'?$listList->text_uk:$listList->text_ru?></p>
+                    <?php endforeach;?>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="call-to-action" data-dismiss="modal"><?=$loc=='uk'?'Закрити':'Закрыть'?></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 <?php endforeach;?>
 
 
-
-<!-- Modal -->
-<div class="modal fade" id="recordForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title" id="myModalLabel"><?=$loc=='ru'?'Записать на субботу.':'Записати на суботу.'?></h3>
-            </div>
-            <?php $form = ActiveForm::begin(['id'=>'RecordForm']);?>
-            <div class="modal-body">
-                <?=$form->field($model,'name')->textInput()->label($loc=='uk'?'Ім\'я':'Имя');?>
-                <?=$form->field($model,'phoneNumber')->textInput()->label();?>
-                <?=$form->field($model,'email')->textInput()->label();?>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="call-to-action" data-dismiss="modal"><?=$loc=='uk'?'Відміна':'Отмена'?></button>
-                <?= Html::submitButton($loc=='ru'?'Записаться':'Записатися',['class'=>'call-to-action'])?>
-            </div>
-            <?php ActiveForm::end();?>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="askQuestionForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title" id="myModalLabel"><?=$loc=='ru'?'Задать вопрос.':'Задати питання'?></h3>
-            </div>
-            <?php $form = ActiveForm::begin(['id'=>'AskQuestionForm',]);?>
-            <div class="modal-body">
-                <?=$form->field($modelAsk,'name')->textInput()->label($loc=='uk'?'Ім\'я':'Имя');?>
-                <?=$form->field($modelAsk,'email')->textInput()->label();?>
-                <?=$form->field($modelAsk,'message')->textarea()->label($loc=='uk'?'Питання':'Вопрос');?>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="call-to-action" data-dismiss="modal"><?=$loc=='uk'?'Відміна':'Отмена'?></button>
-                <?= Html::submitButton($loc=='ru'?'Отправить':'Відправити',['class'=>'call-to-action'])?>
-            </div>
-            <?php ActiveForm::end();?>
-        </div>
-    </div>
-</div>
 
 <div class="alert alert-success record-success">
     <?=$loc=='uk'?'Ви успішно записалися':'Запись прошла успешно'?>
