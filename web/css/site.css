@@ -3,16 +3,6 @@ body {
     height: 100%;
 }
 
-.wrap {
-    min-height: 100%;
-    height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
-}
-
-.wrap > .container {
-    padding: 70px 15px 20px;
-}
 
 .footer {
     height: 60px;
@@ -94,6 +84,9 @@ a.desc:after {
 .nav li > form > button.logout {
     padding: 15px;
     border: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: italic;
 }
 
 @media(max-width:767px) {
@@ -108,6 +101,7 @@ a.desc:after {
 .nav > li > form > button.logout:focus,
 .nav > li > form > button.logout:hover {
     text-decoration: none;
+    background: none;
 }
 
 .nav > li > form > button.logout:focus {
@@ -116,5 +110,126 @@ a.desc:after {
 
 .navbar-brand>img{
     position: relative;
-    top:-11px;
+    top:-10px;
+    height: 40px;
 }
+
+#fh5co-home .home-content-text-block .cast-button{
+    border-top: none;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.drop{
+
+    position: fixed;
+    top:38px;
+    left: 90%;
+    z-index: 9999;
+}
+
+.drop button{
+    border: none;
+    border-radius: 2px;
+    width: 144px;
+    height: 50px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.vertical-line{
+    width: 2px;
+    background: red;
+    height: 20px;
+}
+
+.button-save{
+    border-radius: 50%;
+    width: 115px;
+    height:115px;
+    border: 2px solid red;
+    line-height: 115px;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-save:hover{
+    background: red;
+}
+.textarea{
+    background: transparent;
+    width: 100%;
+    border: none;
+}
+
+
+
+.cast .textInput{
+    font-size: 150px;
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.stock-block h3{
+    font-size: 32px;
+    line-height: 45px;
+    color: #fff;
+
+}
+
+
+.cast-button textarea{
+    text-align: center;
+    color: #f7f9fa;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.alert{
+    margin-top: -10px;
+}
+
+body{
+    padding-top: 0;
+}
+
+.btn{
+    text-transform: none;
+}
+
+.nav li > form > button.logout:hover{
+    background: transparent;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+#fh5co-home{
+    border-bottom: 2px solid red;
+}
+
+.save-container{
+    width: 100%;
+    border-top: 2px solid red;
+    margin-bottom: 40px;
+}
+
+
+
+

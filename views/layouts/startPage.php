@@ -22,26 +22,24 @@ MenuAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body class="body-error">
 <?php $this->beginBody() ?>
 
-<div class="wrap">
 
-    <div class="gradient">
+
+
         <div class="container">
             <?= $content ?>
-        </div>
-    </div>
+
+
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <a href="<?= \yii\helpers\Url::toRoute('/site/login')?>">
-            <p class="pull-left">&copy; StudentWay <?= date('Y') ?></p>
-        </a>
-        <p class="pull-right">При поддержке <a href="http://studentway.org.ua" target="_blank">StudentWay.org.ua</a></p>
-    </div>
-</footer>
+
+
+
+
+
+
 
 <?php $this->endBody() ?>
 </body>

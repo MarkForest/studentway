@@ -3,6 +3,7 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use app\resourse\Resourse;
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
@@ -28,7 +29,9 @@ AdminAsset::register($this);
     <div class="wrap">
         <?php
         NavBar::begin([
-            'brandLabel' => '<img src="/images/logo_bell_org2.png" alt="logo" class="img-responsive">',
+            'brandLabel' => Yii::$app->request->get('reg')==''
+                ? '<img src="/images/logo_bell_org.png" alt="StudentWay">'
+                : Resourse::getCity(Yii::$app->request->get('reg')).':',
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-inverse navbar-fixed-top',
@@ -38,23 +41,33 @@ AdminAsset::register($this);
             'options' => ['class' => 'navbar-nav navbar-right'],
             'items' => [
 
-
                 ['label' => 'Главная', 'url' => ['/admin/default/index']],
-                ['label' => 'Курсы Польского', 'url' => ['/admin/course-polish/index    ']],
+                ['label' => 'Курсы Польского', 'url' => ['/admin/admin-course-polish/index']],
                 ['label' => 'Институты', 'url' => ['/admin/institutes/index']],
                 ['label' => 'Перейти на сайт', 'url' => ['/site/index']],
+
+                Yii::$app->user->isGuest ? (
+                ['label' => 'Login', 'url' => ['/site/login']]
+                ) : (
+                    '<li>'
+                    . Html::beginForm(['/site/logout'], 'post')
+                    . Html::submitButton(
+                        'Выход (' . Yii::$app->user->identity->username . ')',
+                        ['class' => 'btn-link logout',]
+                    )
+                    . Html::endForm()
+                    . '</li>'
+                ),
+
             ],
         ]);
         NavBar::end();
         ?>
-
-        <div class="container">
-            <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
-            <?= $content ?>
-        </div>
     </div>
+
+
+        <?= $content ?>
+
 
     <footer class="footer">
         <div class="container">

@@ -31,6 +31,7 @@ class ListHome extends \yii\db\ActiveRecord
     {
         return [
             [['text_uk', 'text_ru'], 'string'],
+            [['text_uk', 'text_ru'], 'required'],
             [['home_id'], 'required'],
             [['home_id'], 'integer'],
             [['home_id'], 'exist', 'skipOnError' => true, 'targetClass' => Home::className(), 'targetAttribute' => ['home_id' => 'id']],

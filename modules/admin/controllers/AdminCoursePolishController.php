@@ -34,34 +34,64 @@ use app\models\Question;
 use app\models\Services;
 use app\models\Tariffs;
 use app\models\Team;
+use app\modules\admin\models\HomeForm;
+use app\modules\admin\models\PrivilegeForm;
 use Yii;
 use yii\web\Controller;
 
-class CoursePolishController extends Controller
+class AdminCoursePolishController extends Controller
 {
+
+//    Ajax Home
+    public function actionSaveHome(){
+        $homeForm = new HomeForm();
+        if (Yii::$app->request->isAjax){
+
+            $homeForm->load(Yii::$app->request->post());
+            $homeForm->listHome = $_POST['HomeForm']['listHome'];
+            return ($homeForm->validate() && $homeForm->saveData());
+        }
+    }
+
+    //    Ajax Privilege
+    public function actionSavePrivilege(){
+        $privilegeForm = new PrivilegeForm();
+        if (Yii::$app->request->isAjax){
+
+            $privilegeForm->load(Yii::$app->request->post());
+            $privilegeForm->listPrivilege = $_POST['PrivilegeForm']['listPrivilege'];
+            return ($privilegeForm->validate() && $privilegeForm->saveData());
+        }
+    }
+
+
+
+
     public function actionIndex($reg = 'dp'){
 
 
-        if($reg=='dp')$drop = 'Дніпро (UK)';
-        if($reg=='ky')$drop = 'Київ (UK)';
-        if($reg=='kh')$drop = 'Харьків (UK)';
-        if($reg=='vn')$drop = 'Вінниця (UK)';
-        if($reg=='kv')$drop = 'Кропівницький (UK)';
-        if($reg=='km')$drop = 'Кременчуг (UK)';
-        if($reg=='iz')$drop = 'Ізмаил (UK)';
-        if($reg=='od')$drop = 'Одесса (UK)';
-        if($reg=='bc')$drop = 'Біла Церква (UK)';
-        if($reg=='sl')$drop = 'Cлов\'янськ (UK)';
+        if($reg=='dp')$drop = 'Днепр';
+        if($reg=='ky')$drop = 'Киев';
+        if($reg=='kh')$drop = 'Харьков';
+        if($reg=='vn')$drop = 'Винница';
+        if($reg=='kv')$drop = 'Кропивницькый';
+        if($reg=='km')$drop = 'Кременчук';
+        if($reg=='iz')$drop = 'Измаил';
+        if($reg=='od')$drop = 'Одесса';
+        if($reg=='bc')$drop = 'Белая Церковь';
+        if($reg=='sl')$drop = 'Cловянск';
 
 
 
         //шапка сайта Home
         $home = Home::findOne(['region_key'=>$reg]);
         $listHome = ListHome::find()->where(['home_id'=>$home->id])->all();
+        $homeForm = new HomeForm();
 
         //Привелегии
         $privilege = Privilege::findOne(['region_key'=>$reg]);
         $listPrivilege = ListPrivilege::find()->where(['privilege_id'=>$privilege->id])->all();
+        $privilegeForm = new PrivilegeForm();
 
         //Гарантии
         $assurance = Assurance::findOne(['region_key'=>$reg]);
@@ -72,6 +102,7 @@ class CoursePolishController extends Controller
 
         //Второй Синий блок
         $gettingSecond = GettingSecond::findOne(['region_key'=>$reg]);
+
 
 
         //Тарифы
@@ -128,12 +159,10 @@ class CoursePolishController extends Controller
         $footer = Footer::findOne(['region_key'=>$reg]);
 
 
-        //Ajax
-
-
 
         return $this->render('index',[
 
+            'reg'=>$reg,
             'drop'=>$drop,
             'home'=>$home,
             'listHome'=>$listHome,
@@ -160,6 +189,9 @@ class CoursePolishController extends Controller
             'gettingFifth'=>$gettingFifth,
             'partners' => $partners,
             'footer'=>$footer,
+            'homeForm'=>$homeForm,
+            'privilegeForm'=>$privilegeForm,
+
         ]);
     }
 

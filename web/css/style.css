@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ::selection {
   color: #fff;
-  background: #1fb5f6;
+  /*background: #1fb5f6;*/
 }
 
 #fh5co-header {
@@ -1623,5 +1623,22 @@ button{
 
 a:hover{
   text-decoration: none;
+}
+
+/************************************/
+/* Tabs*/
+
+.nav-tabs > li a{
+  font-size: 16px;
+  background-color: transparent;
+  padding: 5px;
+}
+
+.nav-tabs > li.active>a,.nav-tabs > li.active>a:focus{
+  background-color: transparent;
+}
+
+.nav-tabs > li a img{
+  width: 25px;
 }
 

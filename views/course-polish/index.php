@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
-
+\yii\helpers\Url::remember();
 ?>
 <header role="banner" id="fh5co-header">
     <div class="fluid-container">
@@ -609,26 +609,6 @@ use yii\widgets\ActiveForm;
                     <li><i class="icon-globe2"></i><a href="#"><?=$footer->site?></a></li>
                 </ul>
             </div>
-<!--            <div class="col-md-4 to-animate">-->
-<!--                <h3 class="section-title for-email">--><?//=$loc=='uk'?$footer->form_title_uk:$footer->form_title_ru?><!--</h3>-->
-<!--                <form class="contact-form">-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="name" class="sr-only">--><?//=$loc=='uk'?'ім\'я':'Имя'?><!--</label>-->
-<!--                        <input type="name" class="form-control" id="name" placeholder="--><?//=$loc=='uk'?'ім\'я':'Имя'?><!--">-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="email" class="sr-only">Email</label>-->
-<!--                        <input type="email" class="form-control" id="email" placeholder="Email">-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <label for="message" class="sr-only">--><?//=$loc=='uk'?'Повідомлення':'Сообщение'?><!--</label>-->
-<!--                        <textarea class="form-control" id="message" rows="7" placeholder="--><?//=$loc=='uk'?'Повідомлення':'Сообщение'?><!--"></textarea>-->
-<!--                    </div>-->
-<!--                    <div class="form-group">-->
-<!--                        <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="--><?//=$loc=='uk'?'Відправити повідомлення':'Отправить сообщение'?><!--">-->
-<!--                    </div>-->
-<!--                </form>-->
-<!--            </div>-->
         </div>
     </div>
 </div>
