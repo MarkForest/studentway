@@ -34,7 +34,7 @@ class Privilege extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['main_title_uk', 'main_title_ru', 'disc_uk', 'disk_ru', 'title_list_uk', 'title_list_ru'], 'string'],
+            [['main_title_uk', 'main_title_ru', 'disc_uk', 'disc_ru', 'title_list_uk', 'title_list_ru'], 'string'],
             [['region_key'], 'string', 'max' => 10],
         ];
     }
@@ -49,7 +49,7 @@ class Privilege extends \yii\db\ActiveRecord
             'main_title_uk' => 'Main Title Uk',
             'main_title_ru' => 'Main Title Ru',
             'disc_uk' => 'Disc Uk',
-            'disk_ru' => 'Disk Ru',
+            'disc_ru' => 'Disk Ru',
             'title_list_uk' => 'Title List Uk',
             'title_list_ru' => 'Title List Ru',
             'region_key' => 'Region Key',

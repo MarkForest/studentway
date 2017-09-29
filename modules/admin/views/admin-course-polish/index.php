@@ -292,6 +292,7 @@ use yii\widgets\ActiveForm;
     <!--################# PRIVILEGE ###################-->
 
 <section id="fh5co-explore" data-section="explore">
+
     <?php $form = ActiveForm::begin(['id'=>'PrivilegeForm'])?>
     <?=$form->field($privilegeForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
     <div class="container">
@@ -306,12 +307,24 @@ use yii\widgets\ActiveForm;
                 <div class="tab-content">
                     <div id="privilege-main-title-uk" class="tab-pane fade in active">
 
-                        <h2><?=$privilege->main_title_uk?></h2>
+                        <h2 style="text-align: center">
+                            <?=$form->field($privilegeForm,'main_title_uk')->textarea([
+                                'value'=>$privilege->main_title_uk,
+                                'class'=>'textarea text-center',
+                                'rows'=>1,
+                            ])->label(false)?>
+                        </h2>
 
                     </div>
                     <div id="privilege-main-title-ru" class="tab-pane fade">
 
-                        <h2><?=$privilege->main_title_ru?></h2>
+                        <h2 class="text-center">
+                            <?=$form->field($privilegeForm,'main_title_ru')->textarea([
+                                'value'=>$privilege->main_title_ru,
+                                'class'=>'textarea text-center',
+                                'rows'=>1,
+                            ])->label(false)?>
+                        </h2>
 
                     </div>
                 </div>
@@ -328,12 +341,25 @@ use yii\widgets\ActiveForm;
                         <div class="tab-content">
                             <div id="privilege-disc-uk" class="tab-pane fade in active">
 
-                                <h3><?=$privilege->disc_uk?></h3>
+                                <h3>
+                                    <?=$form->field($privilegeForm,'disc_uk')->textarea([
+                                        'value'=>$privilege->disc_uk,
+                                        'class'=>'textarea text-center',
+                                        'rows'=>2,
+                                    ])->label(false)?>
+                                </h3>
+
 
                             </div>
                             <div id="privilege-disc-ru" class="tab-pane fade">
 
-                                <h3><?=$privilege->disc_ru?></h3>
+                                <h3>
+                                    <?=$form->field($privilegeForm,'disc_ru')->textarea([
+                                        'value'=>$privilege->disc_ru,
+                                        'class'=>'textarea text-center',
+                                        'rows'=>2,
+                                    ])->label(false)?>
+                                </h3>
 
                             </div>
                         </div>
@@ -358,12 +384,24 @@ use yii\widgets\ActiveForm;
                         <div class="tab-content">
                             <div id="privilege-title-list-uk" class="tab-pane fade in active">
 
-                                <h3><?=$privilege->title_list_uk?></h3>
+                                <h3>
+                                    <?=$form->field($privilegeForm,'title_list_uk')->textarea([
+                                        'value'=>$privilege->title_list_uk,
+                                        'class'=>'textarea',
+                                        'rows'=>2,
+                                    ])->label(false)?>
+                                </h3>
 
                             </div>
                             <div id="privilege-title-list-ru" class="tab-pane fade">
 
-                                <h3><?=$privilege->title_list_ru?></h3>
+                                <h3>
+                                    <?=$form->field($privilegeForm,'title_list_ru')->textarea([
+                                        'value'=>$privilege->title_list_ru,
+                                        'class'=>'textarea',
+                                        'rows'=>2,
+                                    ])->label(false)?>
+                                </h3>
 
                             </div>
                         </div>
@@ -381,13 +419,25 @@ use yii\widgets\ActiveForm;
 
                                     <div id="privilege-list-text-uk<?=$count?>" class="tab-pane fade in active">
                                         <li><i class="icon-check2"></i>
-                                            <?=$list->text_uk?>
+
+                                            <?=$form->field($privilegeForm,'listPrivilege['.$list->id.'][text_uk]')->textarea([
+                                                'value'=>$list->text_uk,
+                                                'class'=>'textarea',
+                                                'rows'=>2,
+                                            ])->label(false)?>
+
                                         </li>
                                     </div>
 
                                     <div id="privilege-list-text-ru<?=$count?>" class="tab-pane fade">
                                         <li><i class="icon-check2"></i>
-                                            <?=$list->text_ru?>
+
+                                            <?=$form->field($privilegeForm,'listPrivilege['.$list->id.'][text_ru]')->textarea([
+                                                'value'=>$list->text_ru,
+                                                'class'=>'textarea',
+                                                'rows'=>2,
+                                            ])->label(false)?>
+
                                         </li>
                                     </div>
 

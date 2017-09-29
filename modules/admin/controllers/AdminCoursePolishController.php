@@ -58,8 +58,16 @@ class AdminCoursePolishController extends Controller
         $privilegeForm = new PrivilegeForm();
         if (Yii::$app->request->isAjax){
 
-            $privilegeForm->load(Yii::$app->request->post());
+//            $privilegeForm->load(Yii::$app->request->post());
+            $privilegeForm->main_title_uk = $_POST['PrivilegeForm']['main_title_uk'];
+            $privilegeForm->main_title_ru = $_POST['PrivilegeForm']['main_title_ru'];
+            $privilegeForm->title_list_uk = $_POST['PrivilegeForm']['title_list_uk'];
+            $privilegeForm->title_list_ru = $_POST['PrivilegeForm']['title_list_ru'];
+            $privilegeForm->disc_uk = $_POST['PrivilegeForm']['disc_uk'];
+            $privilegeForm->disc_ru = $_POST['PrivilegeForm']['disc_ru'];
             $privilegeForm->listPrivilege = $_POST['PrivilegeForm']['listPrivilege'];
+            $privilegeForm->reg = $_POST['PrivilegeForm']['reg'];
+
             return ($privilegeForm->validate() && $privilegeForm->saveData());
         }
     }
@@ -92,6 +100,7 @@ class AdminCoursePolishController extends Controller
         $privilege = Privilege::findOne(['region_key'=>$reg]);
         $listPrivilege = ListPrivilege::find()->where(['privilege_id'=>$privilege->id])->all();
         $privilegeForm = new PrivilegeForm();
+
 
         //Гарантии
         $assurance = Assurance::findOne(['region_key'=>$reg]);

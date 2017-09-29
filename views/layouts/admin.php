@@ -31,7 +31,7 @@ AdminAsset::register($this);
         NavBar::begin([
             'brandLabel' => Yii::$app->request->get('reg')==''
                 ? '<img src="/images/logo_bell_org.png" alt="StudentWay">'
-                : Resourse::getCity(Yii::$app->request->get('reg')).':',
+                : Resourse::getCity(Yii::$app->request->get('reg')),
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-inverse navbar-fixed-top',

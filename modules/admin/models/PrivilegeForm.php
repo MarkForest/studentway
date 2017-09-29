@@ -19,7 +19,7 @@ class PrivilegeForm extends Model
     public $main_title_uk;
     public $main_title_ru;
     public $disc_uk;
-    public $disk_ru;
+    public $disc_ru;
     public $title_list_uk;
     public $title_list_ru;
     public $listPrivilege=[];
@@ -31,20 +31,19 @@ class PrivilegeForm extends Model
             [['main_title_uk',
                 'main_title_ru',
                 'disc_uk',
-                'disk_ru',
+                'disc_ru',
                 'title_list_uk',
-                'title_list_ru'], 'required'],
+                'title_list_ru'], 'string'],
         ];
     }
 
     public function saveData(){
         $privilege = Privilege::findOne(['region_key'=>$this->reg]);
-        $listPrivilege = ListPrivilege::find()->where(['privilege_id'=>$privilege->id])->all();
 
         $privilege->main_title_uk = $this->main_title_uk;
         $privilege->main_title_ru = $this->main_title_ru;
         $privilege->disc_uk = $this->disc_uk;
-        $privilege->disk_ru = $this->disk_ru;
+        $privilege->disc_ru = $this->disc_ru;
         $privilege->title_list_uk = $this->title_list_uk;
         $privilege->title_list_ru = $this->title_list_ru;
 
@@ -58,7 +57,7 @@ class PrivilegeForm extends Model
         }
 
 
-        return ($privilege->save()&&$isSaved);
+        return ($privilege->save(false)&&$isSaved);
 
     }
 

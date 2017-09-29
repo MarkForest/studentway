@@ -3,7 +3,7 @@
  */
 $(document).ready(function () {
 
-    $('.navbar-brand').css('color','red');
+    $('.navbar-brand').css('color','yellow');
 
 
     $('[id="RecordForm"]').on('beforeSubmit',function () {

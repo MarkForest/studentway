@@ -167,7 +167,9 @@ a.desc:after {
     border: none;
 }
 
-
+.textarea:focus{
+    outline: none;
+}
 
 .cast .textInput{
     font-size: 150px;
