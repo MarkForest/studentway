@@ -127,7 +127,8 @@ a.desc:after {
 
     position: fixed;
     top:38px;
-    left: 90%;
+    left: unset;
+    right: 0;
     z-index: 9999;
 }
 
@@ -148,18 +149,20 @@ a.desc:after {
 
 .button-save{
     border-radius: 50%;
-    width: 115px;
-    height:115px;
-    border: 2px solid red;
-    line-height: 115px;
+    width: 100px;
+    height:100px;
+    border: 1px solid red;
+    line-height: 100px;
     text-align: center;
-    background: rgba(0,0,0,0.4);
-    color: #fff;
+    background: rgba(0,0,0,0.1);
+    color: #030366;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .button-save:hover{
-    background: red;
+    background: limegreen;
+    color: white;
 }
 .textarea{
     background: transparent;
@@ -222,16 +225,38 @@ body{
 }
 
 
-#fh5co-home{
-    border-bottom: 2px solid red;
-}
-
 .save-container{
-    width: 100%;
-    border-top: 2px solid red;
+    /*width: 100%;*/
+    border-top: 1px solid red;
     margin-bottom: 40px;
 }
 
+.navbar-inverse{
+    height: 51px;
+}
+
+.mt .col-md-4 .block-garant .text-garant{
+    height: 300px;
+}
+
+.text-garant .textarea{
+    font-size: 28px;
+
+}
+
+.getting-started .disc .textarea{
+    font-size: 16px;
+    color: #fff;
+}
 
 
+.fh5co-pricing .pricing-plan{
+    margin-top: 10px;
+}
+
+.price-box .list-list-price .textarea,
+.box-services .fh5co-post .disc-services .textarea,
+.disc-team .textarea{
+    font-size: 16px;
+}
 

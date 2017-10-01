@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-explore .header-block-explore{
   margin-top: 40px;
 }
-.fh5co-explore .header-block-explore img{
+.fh5co-explore .header-block-explore .col-md-2 > img{
   height: 80px;
 }
 
@@ -701,7 +701,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #1fb5f6;
   padding: 60px 0 40px 0;
 }
-.getting-started-2 .col-md-9 img{
+.getting-started-2 .col-md-9 > img{
   height: 70px;
   margin: 20px auto;
 }

@@ -3,7 +3,7 @@
  */
 $(document).ready(function () {
 
-    $('.navbar-brand').css('color','yellow');
+    $('.navbar-brand').css('color','white');
 
 
     $('[id="RecordForm"]').on('beforeSubmit',function () {
@@ -35,7 +35,7 @@ $(document).ready(function () {
             }
         });
         return false;
-    })
+    });
 
     $('[id="AskQuestionForm"]').on('beforeSubmit',function () {
 
@@ -67,7 +67,7 @@ $(document).ready(function () {
             }
         });
         return false;
-    })
+    });
 
 
     $('[id="HomeForm"]').on('beforeSubmit',function () {
@@ -93,7 +93,7 @@ $(document).ready(function () {
             }
         });
         return false;
-    })
+    });
 
 
     $('[id="PrivilegeForm"]').on('beforeSubmit',function () {
@@ -119,6 +119,208 @@ $(document).ready(function () {
             }
         });
         return false;
-    })
+    });
+
+    $('[id="AssuranceForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-assurances',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+    $('[id="GettingFirstForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-getting-first',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+    $('[id="GettingSecondForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-getting-second',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+    $('[id="TariffsForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-tariffs',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+
+    $('[id="GettingThirdForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-getting-third',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+
+    $('[id="ServicesForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-services',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+    $('[id="GettingFourthForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-getting-fourth',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+    $('[id="TeamForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-team',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
 
 })

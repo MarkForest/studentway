@@ -50,7 +50,6 @@ use yii\widgets\ActiveForm;
 
 <!--###############################################-->
 <!--#################### HOME #####################-->
-
 <?php $form = ActiveForm::begin(['id'=>'HomeForm'])?>
 <?=$form->field($homeForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
 <section id="fh5co-home" data-section="home">
@@ -281,18 +280,19 @@ use yii\widgets\ActiveForm;
     </div>
 
 </section>
-<div class="container">
+<div class="container save-container">
     <div class="vertical-line center-block"></div>
     <input type="submit" class="button-save center-block" value="Сохранить">
 </div>
 <?php ActiveForm::end()?>
+<!--################# End HOME ###############-->
+<!--###################################################-->
 
 
-    <!--###############################################-->
-    <!--################# PRIVILEGE ###################-->
 
 <section id="fh5co-explore" data-section="explore">
-
+    <!--###############################################-->
+    <!--################# PRIVILEGE ###################-->
     <?php $form = ActiveForm::begin(['id'=>'PrivilegeForm'])?>
     <?=$form->field($privilegeForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
     <div class="container">
@@ -454,44 +454,190 @@ use yii\widgets\ActiveForm;
             </div>
         </div>
     </div>
-
     <div class="container save-container">
         <div class="vertical-line center-block"></div>
         <input type="submit" class="button-save center-block" value="Сохранить">
     </div>
     <?php ActiveForm::end()?>
+    <!--################# End PRIVILEGE ###############-->
+    <!--###############################################-->
 
     <!--###############################################-->
     <!--################# ASSURANCE ###################-->
-
+    <?php $form = ActiveForm::begin(['id'=>'AssuranceForm'])?>
+    <?=$form->field($assuranceForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
     <div class="fh5co-explore fh5co-explore-bg-color">
         <div class="bg-text">
             <div class="container">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate text-center"><?=$assurance->main_title_uk.' | '.$assurance->main_title_ru?></h2>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#assurance-main-title-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                        <li><a data-toggle="tab" href="#assurance-main-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <div id="assurance-main-title-uk" class="tab-pane fade in active">
+
+                                <h2 class="to-animate text-center">
+
+                                    <?=$form->field($assuranceForm,'main_title_uk')->textarea([
+                                        'value'=>$assurance->main_title_uk,
+                                        'class'=>'textarea text-center',
+                                        'rows'=>1,
+                                    ])->label(false)?>
+
+                                </h2>
+
+                        </div>
+
+                        <div id="assurance-main-title-ru" class="tab-pane fade">
+
+                                <h2 class="to-animate text-center">
+
+                                    <?=$form->field($assuranceForm,'main_title_ru')->textarea([
+                                        'value'=>$assurance->main_title_ru,
+                                        'class'=>'textarea text-center',
+                                        'rows'=>1,
+                                    ])->label(false)?>
+
+                                </h2>
+
+                        </div>
+
+                    </div>
+
+
                 </div>
                 <div class="row">
                     <div class="header-block-explore to-animate-3">
                         <div class="col-md-2 col-md-offset-3">
-                            <h3 class=""><?=$assurance->disc_title_uk.' | '.$assurance->disc_title_ru?></h3>
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#assurance-disc-title-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#assurance-disc-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+
+                                <div id="assurance-disc-title-uk" class="tab-pane fade in active">
+
+                                    <h3 class="to-animate text-center">
+
+                                        <?=$form->field($assuranceForm,'disc_title_uk')->textarea([
+                                            'value'=>$assurance->disc_title_uk,
+                                            'class'=>'textarea',
+                                            'rows'=>1,
+                                        ])->label(false)?>
+
+                                    </h3>
+
+                                </div>
+
+                                <div id="assurance-disc-title-ru" class="tab-pane fade">
+
+                                    <h3 class="to-animate text-center">
+
+                                        <?=$form->field($assuranceForm,'disc_title_ru')->textarea([
+                                            'value'=>$assurance->disc_title_ru,
+                                            'class'=>'textarea',
+                                            'rows'=>1,
+                                        ])->label(false)?>
+
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
                             <img src="/images/icon_3373.png" alt="students" class="">
                         </div>
                         <div class="col-md-5">
-                            <h3><?=$assurance->disc_text_uk.' | '.$assurance->disc_text_ru?></h3>
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#assurance-disc-text-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#assurance-disc-text-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+
+                                <div id="assurance-disc-text-uk" class="tab-pane fade in active">
+
+                                    <h3 class="to-animate text-center">
+
+                                        <?=$form->field($assuranceForm,'disc_text_uk')->textarea([
+                                            'value'=>$assurance->disc_text_uk,
+                                            'class'=>'textarea',
+                                            'rows'=>3,
+                                        ])->label(false)?>
+
+                                    </h3>
+
+                                </div>
+
+                                <div id="assurance-disc-text-ru" class="tab-pane fade">
+
+                                    <h3 class="to-animate text-center">
+
+                                        <?=$form->field($assuranceForm,'disc_text_ru')->textarea([
+                                            'value'=>$assurance->disc_text_ru,
+                                            'class'=>'textarea',
+                                            'rows'=>3,
+                                        ])->label(false)?>
+
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="">
                         <div class="mt">
+                            <?php $count=1?>
                             <?php foreach ($listAssurance as $list):?>
                                 <div class="col-md-4 to-animate-3 text-center">
                                     <div class="block-garant center-block">
                                         <div class="text-garant">
-                                            <p><?=$list->text_uk.' | '.$list->text_ru?></p>
+
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a data-toggle="tab" href="#assurance-list-text-uk<?=$count?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                                <li><a data-toggle="tab" href="#assurance-list-text-ru<?=$count?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                                            </ul>
+
+                                            <div class="tab-content">
+
+                                                <div id="assurance-list-text-uk<?=$count?>" class="tab-pane fade in active">
+
+                                                        <?=$form->field($assuranceForm,'listAssurance['.$list->id.'][text_uk]')->textarea([
+                                                            'value'=>$list->text_uk,
+                                                            'class'=>'textarea text-center',
+                                                            'rows'=>6
+                                                        ])->label(false)?>
+
+                                                </div>
+
+                                                <div id="assurance-list-text-ru<?=$count?>" class="tab-pane fade">
+
+                                                        <?=$form->field($assuranceForm,'listAssurance['.$list->id.'][text_ru]')->textarea([
+                                                            'value'=>$list->text_ru,
+                                                            'class'=>'textarea text-center',
+                                                            'rows'=>5
+                                                        ])->label(false)?>
+
+                                                </div>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
+                                <?php $count++?>
                             <?php endforeach;?>
                         </div>
                     </div>
@@ -499,100 +645,338 @@ use yii\widgets\ActiveForm;
             </div>
         </div>
     </div>
-
+    <div class="container save-container">
+        <div class="vertical-line center-block"></div>
+        <input type="submit" class="button-save center-block" value="Сохранить">
+    </div>
+    <?php ActiveForm::end()?>
+    <!--################# End ASSURANCE ###############-->
+    <!--###############################################-->
 </section>
 
-
+<!--###############################################-->
+<!--################# GETTING FIRST ###################-->
+<?php $form = ActiveForm::begin(['id'=>'GettingFirstForm'])?>
+<?=$form->field($gettingFirstForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
 <div class="getting-started getting-started-1">
     <div class="container">
         <div class="row">
             <div class="col-md-8 to-animate">
-                <h3><?=$gettingFirst->disc_uk.' | '.$gettingFirst->disc_ru?></h3>
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#getting-first-disc-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                    <li><a data-toggle="tab" href="#getting-first-disc-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="getting-first-disc-uk" class="tab-pane fade in active">
+
+                        <h3 class="to-animate text-center">
+
+                            <?=$form->field($gettingFirstForm,'disc_uk')->textarea([
+                                'value'=>$gettingFirst->disc_uk,
+                                'class'=>'textarea',
+                                'rows'=>2,
+                            ])->label(false)?>
+
+                        </h3>
+
+                    </div>
+
+                    <div id="getting-first-disc-ru" class="tab-pane fade">
+
+                        <h3 class="to-animate text-center">
+
+                            <?=$form->field($gettingFirstForm,'disc_ru')->textarea([
+                                'value'=>$gettingFirst->disc_ru,
+                                'class'=>'textarea',
+                                'rows'=>2,
+                            ])->label(false)?>
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
             </div>
             <div class="col-md-4 to-animate-2">
                 <div class="call-to-action text-right" data-toggle="modal" data-target="#recordForm">
-                    <a class="sign-up"><?=$gettingFirst->button_text_uk.' | '.$gettingFirst->button_text_ru?></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#getting-first-button-text-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                        <li><a data-toggle="tab" href="#getting-first-button-text-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                    </ul>
 
-<section id="fh5co-testimony" data-section="testimony">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 to-animate">
-                <div class="wrap-testimony">
-                    <div class="owl-carousel-fullwidth">
-                        <div class="item">
-                            <div class="testimony-slide active text-center">
-                                <figure>
-                                    <img src="/images/person.jpg" alt="user">
-                                </figure>
-                                <blockquote>
-                                    <p>"Велике спасибі за надану можливість познайомитися з командою польської мови. Кваліфіковані викладачі, які протягом тривалого часу навчання допомогли мені поліпшити іноземну мову. Практичні завдання, уроки, лекції, кіно кожен день збільшувала свій словниковий запас. Раджу всім працювати з вами!"</p>
-                                </blockquote>
-                                <span>Юліанна Мицик</span>
-                            </div>
+                    <div class="tab-content">
+
+                        <div id="getting-first-button-text-uk" class="tab-pane fade in active">
+
+                                <a class="sign-up">
+                                    <?=$form->field($gettingFirstForm,'button_text_uk')->textarea([
+                                        'value'=>$gettingFirst->button_text_uk,
+                                        'class'=>'textarea',
+                                        'rows'=>1,
+                                    ])->label(false)?>
+                                </a>
+
                         </div>
-                        <div class="item">
-                            <div class="testimony-slide active text-center">
-                                <figure>
-                                    <img src="/images/person2.jpg" alt="user">
-                                </figure>
-                                <blockquote>
-                                    <p>"Мені дуже подобаються заняття, спасибі за таку велику перспективу навчання в Польщі. Я дуже задоволена навчанням."</p>
-                                </blockquote>
-                                <span>Катя Ярошенко</span>
-                            </div>
+
+                        <div id="getting-first-button-text-ru" class="tab-pane fade">
+
+                                <a class="sign-up">
+                                    <?=$form->field($gettingFirstForm,'button_text_ru')->textarea([
+                                        'value'=>$gettingFirst->button_text_ru,
+                                        'class'=>'textarea',
+                                        'rows'=>1,
+                                    ])->label(false)?>
+                                </a>
                         </div>
-                        <div class="item">
-                            <div class="testimony-slide active text-center">
-                                <figure>
-                                    <img src="/images/person3.jpg" alt="user">
-                                </figure>
-                                <blockquote>
-                                    <p>"Очень доступные и хорошо структурированные занятия по польскому языку. Нравится уроки "Начинаем говорить по польски" - повторять текст достаточно просто и незаметно запоминаешь необходимые слова и выражения. Бонус - появляются интересные фильмы на польском)."</p>
-                                </blockquote>
-                                <span>Тетяна Полонська</span>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
+<div class="container save-container">
+    <div class="vertical-line center-block"></div>
+    <input type="submit" class="button-save center-block" value="Сохранить">
+</div>
+<?php ActiveForm::end()?>
+<!--################# End GETTING FIRST ###############-->
+<!--###################################################-->
 
+
+<!--###################################################-->
+<!--################# GETTING SECOND ##################-->
+<?php $form = ActiveForm::begin(['id'=>'GettingSecondForm'])?>
+<?= $form->field($gettingSecondForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
 <div class="getting-started getting-started-1 block-with-clock">
     <div class="container">
         <div class="row">
             <div class="col-md-6 to-animate text-center">
-                <h3 id="header-clock"><?=$gettingSecond->timer_title_uk.' | '.$gettingSecond->timer_title_ru?></h3>
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#getting-second-timer-title-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                    <li><a data-toggle="tab" href="#getting-second-timer-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="getting-second-timer-title-uk" class="tab-pane fade in active">
+
+                        <h3>
+
+                            <?=$form->field($gettingSecondForm,'timer_title_uk')->textarea([
+                                'value'=>$gettingSecond->timer_title_uk,
+                                'class'=>'textarea',
+                                'rows'=>1,
+                            ])->label(false)?>
+
+                        </h3>
+
+                    </div>
+
+                    <div id="getting-second-timer-title-ru" class="tab-pane fade">
+
+                        <h3>
+
+                            <?=$form->field($gettingSecondForm,'timer_title_ru')->textarea([
+                                'value'=>$gettingSecond->timer_title_ru,
+                                'class'=>'textarea',
+                                'rows'=>1,
+                            ])->label(false)?>
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
                 <div id="CDT"></div>
 
             </div>
             <div class="col-md-6 to-animate-2">
-                <h3><?=$gettingSecond->title_uk.' | '.$gettingSecond->title_ru?></h3>
-                <p><?=$gettingSecond->disc_uk.' | '.$gettingSecond->disc_ru?></p>
-                <!--                <div class="call-to-action text-right">-->
-                <!--                    <a href="#" class="sign-up">--><?//=$getSecond['buttonText']?><!--</a>-->
-                <!--                </div>-->
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#getting-second-title-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                    <li><a data-toggle="tab" href="#getting-second-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="getting-second-title-uk" class="tab-pane fade in active">
+
+                        <h3>
+
+                            <?=$form->field($gettingSecondForm,'title_uk')->textarea([
+                                'value'=>$gettingSecond->title_uk,
+                                'class'=>'textarea',
+                                'rows'=>3,
+                            ])->label(false)?>
+
+                        </h3>
+
+                    </div>
+
+                    <div id="getting-second-title-ru" class="tab-pane fade">
+
+                        <h3>
+
+                            <?=$form->field($gettingSecondForm,'title_ru')->textarea([
+                                'value'=>$gettingSecond->title_ru,
+                                'class'=>'textarea',
+                                'rows'=>3,
+                            ])->label(false)?>
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#getting-second-disc-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                    <li><a data-toggle="tab" href="#getting-second-disc-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="getting-second-disc-uk" class="tab-pane fade in active">
+
+                        <div class="disc">
+
+                            <?=$form->field($gettingSecondForm,'disc_uk')->textarea([
+                                'value'=>$gettingSecond->disc_uk,
+                                'class'=>'textarea',
+                                'rows'=>2,
+                            ])->label(false)?>
+
+                        </div>
+
+                    </div>
+
+                    <div id="getting-second-disc-ru" class="tab-pane fade">
+
+                        <div class="disc">
+
+                            <?=$form->field($gettingSecondForm,'disc_ru')->textarea([
+                                'value'=>$gettingSecond->disc_ru,
+                                'class'=>'textarea',
+                                'rows'=>2,
+                            ])->label(false)?>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+<div class="container save-container">
+    <div class="vertical-line center-block"></div>
+    <input type="submit" class="button-save center-block" value="Сохранить">
+</div>
+<?php ActiveForm::end()?>
+<!--################# End GETTING SECOND ##############-->
+<!--###################################################-->
 
+
+<!--###################################################-->
+<!--##################### TARIFFS #####################-->
+<?php $form = ActiveForm::begin(['id'=>'TariffsForm'])?>
+<?= $form->field($tariffsForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
 <section id="fh5co-pricing" data-section="pricing">
     <div class="fh5co-pricing">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate"><?=$tariffs->title_uk.' | '.$tariffs->title_ru?></h2>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tariffs-title-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                        <li><a data-toggle="tab" href="#tariffs-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <div id="tariffs-title-uk" class="tab-pane fade in active">
+
+                            <h2 class="to-animate">
+
+                                <?=$form->field($tariffsForm,'title_uk')->textarea([
+                                    'value'=>$tariffs->title_uk,
+                                    'class'=>'textarea text-center',
+                                    'rows'=>1,
+                                ])->label(false)?>
+
+                            </h2>
+
+                        </div>
+
+                        <div id="tariffs-title-ru" class="tab-pane fade">
+
+                            <h2 class="to-animate">
+
+                                <?=$form->field($tariffsForm,'title_ru')->textarea([
+                                    'value'=>$tariffs->title_ru,
+                                    'class'=>'textarea text-center',
+                                    'rows'=>1,
+                                ])->label(false)?>
+
+                            </h2>
+
+                        </div>
+
+                    </div>
+
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate"><?=$tariffs->disc_uk.' | '.$tariffs->disc_ru?></h3>
+
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tariffs-disc-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#tariffs-disc-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+
+                                <div id="tariffs-disc-uk" class="tab-pane fade in active">
+
+                                    <h3 class="to-animate">
+
+                                        <?=$form->field($tariffsForm,'disc_uk')->textarea([
+                                            'value'=>$tariffs->disc_uk,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+
+                                    </h3>
+
+                                </div>
+
+                                <div id="tariffs-disc-ru" class="tab-pane fade">
+
+                                    <h3 class="to-animate">
+
+                                        <?=$form->field($tariffsForm,'disc_ru')->textarea([
+                                            'value'=>$tariffs->disc_ru,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -600,18 +984,104 @@ use yii\widgets\ActiveForm;
 
             <div class="row">
                 <div class="pricing">
+                    <?php $count =1?>
+                    <?php $countListList = 100?>
                     <?php foreach ($listTariffs as $list):?>
                         <div class="col-md-4">
                             <div class="price-box to-animate-2 popular">
-                                <h2 class="pricing-plan pricing-plan-offer"><?=$list->title_uk.' | '.$list->title_ru?></h2>
-                                <div class="price"><sup class="currency">грн</sup><?=$list->cost?><small>/місяць | меcяц</small></div>
+
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#list-title-uk<?=$count?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                    <li><a data-toggle="tab" href="#list-title-ru<?=$count?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                                </ul>
+
+                                <div class="tab-content">
+
+                                    <div id="list-title-uk<?=$count?>" class="tab-pane fade in active">
+
+                                        <h2 class="pricing-plan pricing-plan-offer">
+
+                                            <?=$form->field($tariffsForm,'listTariffs['.$list->id.'][title_uk]')->textarea([
+                                                'value'=>$list->title_uk,
+                                                'class'=>'textarea',
+                                                'rows'=>1,
+                                            ])->label(false)?>
+
+                                        </h2>
+
+                                    </div>
+
+                                    <div id="list-title-ru<?=$count?>" class="tab-pane fade">
+
+                                        <h2 class="pricing-plan pricing-plan-offer">
+
+                                            <?=$form->field($tariffsForm,'listTariffs['.$list->id.'][title_ru]')->textarea([
+                                                'value'=>$list->title_ru,
+                                                'class'=>'textarea',
+                                                'rows'=>1,
+                                            ])->label(false)?>
+
+                                        </h2>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="price">
+                                    <?=$form->field($tariffsForm,'listTariffs['.$list->id.'][cost]')->textarea([
+                                        'value'=>$list->cost,
+                                        'class'=>'textarea form-inline',
+                                        'rows'=>2,
+                                    ])->label(false)?>
+                                </div>
                                 <ul>
+
                                     <?php foreach ($lisListTariffs[$list->id] as $listList):?>
-                                        <li><p><i class="icon-check2"></i><?=$listList->text_uk.' | '.$listList->text_ru?></p></li>
+
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#listList-text-uk<?=$countListList?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                            <li><a data-toggle="tab" href="#listList-text-ru<?=$countListList?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+
+                                            <div id="listList-text-uk<?=$countListList?>" class="tab-pane fade in active">
+
+                                             <li>
+                                                 <div class="list-list-price">
+                                                     <?=$form->field($tariffsForm,'listListTariffs['.$listList->id.'][text_uk]')->textarea([
+                                                         'value'=>$listList->text_uk,
+                                                         'class'=>'textarea',
+                                                         'rows'=>2,
+                                                     ])->label(false)?>
+                                                 </div>
+                                             </li>
+
+                                            </div>
+
+                                            <div id="listList-text-ru<?=$countListList?>" class="tab-pane fade">
+
+                                                <li>
+                                                    <div class="list-list-price">
+                                                        <?=$form->field($tariffsForm,'listListTariffs['.$listList->id.'][text_ru]')->textarea([
+                                                            'value'=>$listList->text_ru,
+                                                            'class'=>'textarea',
+                                                            'rows'=>2,
+                                                        ])->label(false)?>
+                                                    </div>
+                                                </li>
+
+                                            </div>
+
+                                        </div>
+
+                                    <?php $countListList++?>
                                     <?php endforeach;?>
+
                                 </ul>
                             </div>
                         </div>
+                    <?php $count++?>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -619,107 +1089,662 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 </section>
+<div class="container save-container">
+    <div class="vertical-line center-block"></div>
+    <input type="submit" class="button-save center-block" value="Сохранить">
+</div>
+<?php ActiveForm::end()?>
+<!--##################### End TARIFFS #################-->
+<!--###################################################-->
 
+<!--###################################################-->
+<!--################# GETTING THIRD ###################-->
+<?php $form = ActiveForm::begin(['id'=>'GettingThirdForm'])?>
+<?= $form->field($gettingThirdForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
 <div class="getting-started getting-started-2">
     <div class="container">
         <div class="row">
             <div class="to-animate">
-                <h3 class="text-center"><?=$gettingThird->title_uk.' | '.$gettingThird->title_ru?></h3>
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#getting-third-title-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                    <li><a data-toggle="tab" href="#getting-third-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="getting-third-title-uk" class="tab-pane fade in active">
+
+
+
+                            <h3 class="text-center">
+                                <?=$form->field($gettingThirdForm,'title_uk')->textarea([
+                                    'value'=>$gettingThird->title_uk,
+                                    'class'=>'textarea text-center',
+                                    'rows'=>1,
+                                ])->label(false)?>
+                            </h3>
+
+
+
+                    </div>
+
+                    <div id="getting-third-title-ru" class="tab-pane fade">
+
+
+
+                            <h3 class="text-center">
+                                <?=$form->field($gettingThirdForm,'title_ru')->textarea([
+                                    'value'=>$gettingThird->title_ru,
+                                    'class'=>'textarea text-center',
+                                    'rows'=>1,
+                                ])->label(false)?>
+                            </h3>
+
+
+                    </div>
+
+                </div>
+
+                <?php $count=1?>
                 <?php foreach ($listGettingThird as $list):?>
                     <div class="col-md-2 text-center">
                         <div class="col-md-9">
                             <img src="/images/<?=$list->image?>" class="img-responsive" alt="images">
-                            <p><?=$list->text_uk.' | '.$list->text_ru?></p>
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#list-text-uk<?=$count?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#list-text-ru<?=$count?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+
+                                <div id="list-text-uk<?=$count?>" class="tab-pane fade in active">
+
+
+
+                                      <div class="disc">
+                                          <?=$form->field($gettingThirdForm,'listGettingThird['.$list->id.'][text_uk]')->textarea([
+                                              'value'=>$list->text_uk,
+                                              'class'=>'textarea text-center',
+                                              'rows'=>6,
+                                          ])->label(false)?>
+                                      </div>
+
+
+
+                                </div>
+
+                                <div id="list-text-ru<?=$count?>" class="tab-pane fade">
+
+
+
+                                        <div class="disc">
+                                            <?=$form->field($gettingThirdForm,'listGettingThird['.$list->id.'][text_ru]')->textarea([
+                                                'value'=>$list->text_ru,
+                                                'class'=>'textarea text-center',
+                                                'rows'=>6,
+                                            ])->label(false)?>
+                                        </div>
+
+
+                                </div>
+
+                            </div>
+
                         </div>
                         <div class="col-md-3">
                             <img src="/images/<?=$list->isLast==1?'micr.png':'red-plus-md.png'?>" alt="plus">
                         </div>
                     </div>
+                <?php $count++?>
                 <?php endforeach;?>
 
                 <div class="col-md-2 text-center">
-                    <h3><?=$gettingThird->cost?><br>грн/міс | мес</h3>
+
+                    <h3>
+                        <?=$form->field($gettingThirdForm,'cost')->textarea([
+                            'class'=>'textarea text-center',
+                            'value'=>$gettingThird->cost,
+                            'rows'=>1,
+                        ])->label(false)?>грн
+
+                    </h3>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="container save-container">
+    <div class="vertical-line center-block"></div>
+    <input type="submit" class="button-save center-block" value="Сохранить">
+</div>
+<?php ActiveForm::end()?>
+<!--################# End GETTING THIRD ##############-->
+<!--###################################################-->
 
+<!--###################################################-->
+<!--#################### SERVICES #####################-->
+<?$form = ActiveForm::begin(['id'=>'ServicesForm'])?>
+<?=$form->field($servicesForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
 <section id="fh5co-services" data-section="services" class="hidden-xs">
     <div class="fh5co-services">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate"><?= $services->header_title_ua.' | '.$services->header_title_ru?></h2>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#services-header-title-ua"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                        <li><a data-toggle="tab" href="#services-header-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <div id="services-header-title-ua" class="tab-pane fade in active">
+
+
+
+                            <h2 class="to-animate">
+                                    <?=$form->field($servicesForm,'header_title_ua')->textarea([
+                                        'value'=>$services->header_title_ua,
+                                        'class'=>'textarea text-center',
+                                        'rows'=>1,
+                                    ])->label(false)?>
+                            </h2>
+
+
+
+                        </div>
+
+                        <div id="services-header-title-ru" class="tab-pane fade">
+
+
+                            <h2 class="to-animate">
+                                    <?=$form->field($servicesForm,'header_title_ru')->textarea([
+                                        'value'=>$services->header_title_ru,
+                                        'class'=>'textarea text-center',
+                                        'rows'=>1,
+                                    ])->label(false)?>
+                            </h2>
+
+
+
+                        </div>
+
+                    </div>
+
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate"><?=$services->disc_uk.' | '.$services->disc_ru?></h3>
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#services-disc-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#services-disc-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+
+                            <div class="tab-content">
+
+                                <div id="services-disc-uk" class="tab-pane fade in active">
+
+
+
+                                    <h3 class="to-animate">
+                                        <?=$form->field($servicesForm,'disc_uk')->textarea([
+                                            'value'=>$services->disc_uk,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+                                    </h3>
+
+
+
+                                </div>
+
+                                <div id="services-disc-ru" class="tab-pane fade">
+
+
+                                    <h3 class="to-animate">
+                                        <?=$form->field($servicesForm,'disc_ru')->textarea([
+                                            'value'=>$services->disc_ru,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+                                    </h3>
+
+
+
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
+                <?php $count=1?>
                 <?php foreach ($listServices as $list):?>
                     <div class="col-md-4">
                         <div class="box-services">
                             <i class="<?=$list->image?> to-animate-2"></i>
                             <div class="fh5co-post to-animate">
-                                <h3><?=$list->block_title_uk.' | '.$list->block_title_ru?></h3>
-                                <p><?=$list->text_uk.' | '.$list->text_ru?></p>
+
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#list-block-title-uk<?=$count?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                    <li><a data-toggle="tab" href="#list-block-title-ru<?=$count?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                                </ul>
+
+                                <div class="tab-content">
+
+                                    <div id="list-block-title-uk<?=$count?>" class="tab-pane fade in active">
+
+
+
+                                        <h3>
+                                            <?=$form->field($servicesForm,'listServices['.$list->id.'][block_title_uk]')->textarea([
+                                                'value'=>$list->block_title_uk,
+                                                'class'=>'textarea',
+                                                'rows'=>1,
+                                            ])->label(false)?>
+                                        </h3>
+
+
+
+                                    </div>
+
+                                    <div id="list-block-title-ru<?=$count?>" class="tab-pane fade">
+
+
+                                        <h3>
+                                            <?=$form->field($servicesForm,'listServices['.$list->id.'][block_title_ru]')->textarea([
+                                                'value'=>$list->block_title_ru,
+                                                'class'=>'textarea',
+                                                'rows'=>1,
+                                            ])->label(false)?>
+                                        </h3>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#services-list-text-uk<?=$count?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                    <li><a data-toggle="tab" href="#services-list-text-ru<?=$count?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                                </ul>
+
+                                <div class="tab-content">
+
+                                    <div id="services-list-text-uk<?=$count?>" class="tab-pane fade in active">
+
+
+
+                                        <div class="disc-services">
+                                            <?=$form->field($servicesForm,'listServices['.$list->id.'][text_uk]')->textarea([
+                                                'value'=>$list->text_uk,
+                                                'class'=>'textarea',
+                                                'rows'=>5,
+                                            ])->label(false)?>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div id="services-list-text-ru<?=$count?>" class="tab-pane fade">
+
+
+                                        <div class="disc-services">
+                                            <?=$form->field($servicesForm,'listServices['.$list->id.'][text_ru]')->textarea([
+                                                'value'=>$list->text_ru,
+                                                'class'=>'textarea',
+                                                'rows'=>5,
+                                            ])->label(false)?>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
+                <?php $count++?>
                 <?php endforeach;?>
             </div>
         </div>
     </div>
 </section>
+<div class="container save-container">
+    <div class="vertical-line center-block"></div>
+    <input type="submit" class="button-save center-block" value="Сохранить">
+</div>
+<?php ActiveForm::end()?>
+<!--################### End SERVICES ##################-->
+<!--###################################################-->
 
+<!--###################################################-->
+<!--################# GETTING FOURTH ###################-->
+<?php $form = ActiveForm::begin(['id'=>'GettingFourthForm'])?>
+<?= $form->field($gettingFourthForm, 'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
 <div class="getting-started getting-started-1">
     <div class="container">
         <div class="row">
             <div class="col-md-8 to-animate">
-                <h3><?=$gettingFourth->title_uk.' | '.$gettingFourth->title_ru?></h3>
-                <p><?=$gettingFourth->disc_uk.' | '.$gettingFourth->disc_ru?></p>
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#getting-fourth-title-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                    <li><a data-toggle="tab" href="#getting-fourth-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="getting-fourth-title-uk" class="tab-pane fade in active">
+
+
+
+                        <h3 class="to-animate">
+                            <?=$form->field($gettingFourthForm,'title_uk')->textarea([
+                                'value'=>$gettingFourth->title_uk,
+                                'class'=>'textarea',
+                                'rows'=>1,
+                            ])->label(false)?>
+                        </h3>
+
+
+
+                    </div>
+
+                    <div id="getting-fourth-title-ru" class="tab-pane fade">
+
+
+                        <h3 class="to-animate">
+                            <?=$form->field($gettingFourthForm,'title_ru')->textarea([
+                                'value'=>$gettingFourth->title_ru,
+                                'class'=>'textarea',
+                                'rows'=>1,
+                            ])->label(false)?>
+                        </h3>
+
+
+
+                    </div>
+
+                </div>
+
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#getting-fourth-disc-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                    <li><a data-toggle="tab" href="#getting-fourth-disc-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="getting-fourth-disc-uk" class="tab-pane fade in active">
+
+
+
+                        <div class="to-animate disc">
+                            <?=$form->field($gettingFourthForm,'disc_uk')->textarea([
+                                'value'=>$gettingFourth->disc_uk,
+                                'class'=>'textarea',
+                                'rows'=>1,
+                            ])->label(false)?>
+                        </div>
+
+
+
+                    </div>
+
+                    <div id="getting-fourth-disc-ru" class="tab-pane fade">
+
+
+                        <div class="to-animate disc">
+                            <?=$form->field($gettingFourthForm,'disc_ru')->textarea([
+                                'value'=>$gettingFourth->disc_ru,
+                                'class'=>'textarea',
+                                'rows'=>1,
+                            ])->label(false)?>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
             </div>
             <div class="col-md-4 to-animate-2">
                 <div class="call-to-action text-right">
-                    <a href="<?=\yii\helpers\Url::to('https://m.me/studentWay20172018')?>" target="_blank" class="sign-up"><?=$gettingFourth->button_text_uk.' | '.$gettingFourth->button_text_ru?></a>
+
+
+
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#getting-fourth-button-text-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                            <li><a data-toggle="tab" href="#getting-fourth-button-text-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <div id="getting-fourth-button-text-uk" class="tab-pane fade in active">
+
+
+                                <a  class="sign-up">
+
+                                    <?=$form->field($gettingFourthForm,'button_text_uk')->textarea([
+                                        'value'=>$gettingFourth->button_text_uk,
+                                        'class'=>'textarea',
+                                        'rows'=>2,
+                                    ])->label(false)?>
+
+                                </a>
+
+
+                            </div>
+
+                            <div id="getting-fourth-button-text-ru" class="tab-pane fade">
+
+                                <a class="sign-up">
+
+                                    <?=$form->field($gettingFourthForm,'button_text_ru')->textarea([
+                                        'value'=>$gettingFourth->button_text_ru,
+                                        'class'=>'textarea',
+                                        'rows'=>2,
+                                    ])->label(false)?>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                    </a>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--############### End GETTING FOURTH ################-->
+<!--###################################################-->
+<div class="container save-container">
+    <div class="vertical-line center-block"></div>
+    <input type="submit" class="button-save center-block" value="Сохранить">
+</div>
+<?php ActiveForm::end()?>
 
+<!--###################################################-->
+<!--###################### TEAM #######################-->
+<?php $form = ActiveForm::begin(['id'=>'TeamForm'])?>
+<?=$form->field($teamForm,'reg')->textInput(['value'=>$reg,'class'=>'hidden'])->label(false)?>
 <section id="fh5co-team" data-section="team">
     <div class="fh5co-team">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-heading text-center">
-                    <h2 class="to-animate"><?=$team->header_title_uk.' | '.$team->header_title_ru?></h2>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#team-header-title-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                        <li><a data-toggle="tab" href="#team-header-title-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="team-header-title-uk" class="tab-pane fade in active">
+                            <h2 >
+                                <?=$form->field($teamForm,'header_title_uk')->textarea([
+                                    'value'=>$team->header_title_uk,
+                                    'class'=>'textarea text-center',
+                                    'rows'=>1,
+                                ])->label(false)?>
+                            </h2>
+                        </div>
+                        <div id="team-header-title-ru" class="tab-pane fade">
+                            <h2>
+                                <?=$form->field($teamForm,'header_title_ru')->textarea([
+                                    'value'=>$team->header_title_ru,
+                                    'class'=>'textarea text-center',
+                                    'rows'=>1,
+                                ])->label(false)?>
+                            </h2>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 subtext">
-                            <h3 class="to-animate"><?=$team->disc_uk.' | '.$team->disc_ru?></h3>
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#team-disc-uk"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#team-disc-ru"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="team-disc-uk" class="tab-pane fade in active">
+                                    <h3>
+                                        <?=$form->field($teamForm,'disc_uk')->textarea([
+                                            'value'=>$team->disc_uk,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+                                    </h3>
+                                </div>
+                                <div id="team-disc-ru" class="tab-pane fade">
+                                    <h3>
+                                        <?=$form->field($teamForm,'disc_ru')->textarea([
+                                            'value'=>$team->disc_ru,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+                                    </h3>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
+                <?php $count=1?>
                 <?php foreach ($listTeam as $list):?>
                     <div class="col-md-3">
                         <div class="team-box text-center to-animate-2">
-                            <div class="user"><img class="img-reponsive" src="/images/<?=$list->image?>" alt="Коваленко Олег"></div>
-                            <h3><?=$list->full_name_uk.' | '.$list->full_name_ru?></h3>
-                            <span class="position"><?=$list->post_uk.' | '.$list->post_ru?></span>
-                            <p><?=$list->text_uk.' | '.$list->text_ru?></p>
+                            <div class="user"><img class="img-reponsive" src="/images/<?=$list->image?>" alt="image<?=$count?>"></div>
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#team-list-full-name-uk<?=$count?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#team-list-full-name-ru<?=$count?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="team-list-full-name-uk<?=$count?>" class="tab-pane fade in active">
+                                    <h3 >
+                                        <?=$form->field($teamForm,'listTeam['.$list->id.'][full_name_uk]')->textarea([
+                                            'value'=>$list->full_name_uk,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+                                    </h3>
+                                </div>
+                                <div id="team-list-full-name-ru<?=$count?>" class="tab-pane fade">
+                                    <h3>
+                                        <?=$form->field($teamForm,'listTeam['.$list->id.'][full_name_ru]')->textarea([
+                                            'value'=>$list->full_name_ru,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#team-list-post-uk<?=$count?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#team-list-post-ru<?=$count?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="team-list-post-uk<?=$count?>" class="tab-pane fade in active">
+                                    <span class="position">
+                                        <?=$form->field($teamForm,'listTeam['.$list->id.'][post_uk]')->textarea([
+                                            'value'=>$list->post_uk,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+                                    </span>
+                                </div>
+                                <div id="team-list-post-ru<?=$count?>" class="tab-pane fade">
+                                    <span class="position">
+                                        <?=$form->field($teamForm,'listTeam['.$list->id.'][post_ru]')->textarea([
+                                            'value'=>$list->post_ru,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>2,
+                                        ])->label(false)?>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#team-list-text-uk<?=$count?>"><img src="/images/uk.png" alt="uk" class="img-responsive"></a></li>
+                                <li><a data-toggle="tab" href="#team-list-text-ru<?=$count?>"><img src="/images/ru.png" alt="ru" class="img-responsive"></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="team-list-text-uk<?=$count?>" class="tab-pane fade in active">
+                                    <div class="disc-team">
+                                        <?=$form->field($teamForm,'listTeam['.$list->id.'][text_uk]')->textarea([
+                                            'value'=>$list->text_uk,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>10,
+                                        ])->label(false)?>
+                                    </div>
+                                </div>
+                                <div id="team-list-text-ru<?=$count?>" class="tab-pane fade">
+                                    <div class="disc-team">
+                                        <?=$form->field($teamForm,'listTeam['.$list->id.'][text_ru]')->textarea([
+                                            'value'=>$list->text_ru,
+                                            'class'=>'textarea text-center',
+                                            'rows'=>10,
+                                        ])->label(false)?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                <?php $count++?>
                 <?php endforeach;?>
             </div>
         </div>
     </div>
 </section>
+<div class="container save-container">
+    <div class="vertical-line center-block"></div>
+    <input type="submit" class="button-save center-block" value="Сохранить">
+</div>
+<?php ActiveForm::end()?>
+<!--#################### End TEAM #####################-->
+<!--###################################################-->
 
+<!--###################################################-->
+<!--#################### QUESTIONS ####################-->
 <section id="fh5co-faq" data-section="faq" class="hidden-xs">
     <div class="fh5co-faq">
         <div class="container">
@@ -751,7 +1776,11 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 </section>
+<!--###################################################-->
+<!--################## END QUESTIONS ##################-->
 
+<!--###################################################-->
+<!--################# GETTING FIFTH ###################-->
 <div class="getting-started getting-started-1">
     <div class="container">
         <div class="row">
@@ -766,7 +1795,11 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 </div>
+<!--############### End GETTING FIFTH ################-->
+<!--###################################################-->
 
+<!--###################################################-->
+<!--#################### FOOTER #######################-->
 <div id="fh5co-footer" role="contentinfo">
     <div class="container">
         <div class="row">
@@ -790,7 +1823,11 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 </div>
+<!--################## END FOOTER #####################-->
+<!--###################################################-->
 
+<!--###################################################-->
+<!--#################### MODALS #######################-->
 <?php foreach ($listQuestion as $list):?>
     <div class="modal fade" id="<?=$list->id?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
@@ -812,17 +1849,19 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
 <?php endforeach;?>
+<!--################## END MODALS #####################-->
+<!--###################################################-->
 
-
-
+<!--###################################################-->
+<!--#################### ALERTS #######################-->
 <div class="alert alert-success record-success">
     Изменения сохранены успешно!
 </div>
-
 <div class="alert alert-danger record-danger">
     Изменения не сохранены, что-то пошло не так!
 </div>
-
+<!--################## END ALERTS #####################-->
+<!--###################################################-->
 
 
 

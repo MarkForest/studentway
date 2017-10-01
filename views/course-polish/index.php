@@ -44,16 +44,16 @@ use yii\widgets\ActiveForm;
             <li><?= Html::a('Винница (ru)', ['course-polish/index?reg=vn&loc=ru']) ?></li>
             <li><?= Html::a('Кропівницький (uk)', ['course-polish/index?reg=kv&loc=uk']) ?></li>
             <li><?= Html::a('Кропивницкий (ru)', ['course-polish/index?reg=kv&loc=ru']) ?></li>
-            <li><?= Html::a('Кременчуг (uk)', ['course-polish/index?reg=km&loc=uk']) ?></li>
-            <li><?= Html::a('Кременчук (ru)', ['course-polish/index?reg=km&loc=ru']) ?></li>
-            <li><?= Html::a('Ізмаил (uk)', ['course-polish/index?reg=iz&loc=uk']) ?></li>
+            <li><?= Html::a('Кременчук (uk)', ['course-polish/index?reg=km&loc=uk']) ?></li>
+            <li><?= Html::a('Кременчуг (ru)', ['course-polish/index?reg=km&loc=ru']) ?></li>
+            <li><?= Html::a('Ізмаїл (uk)', ['course-polish/index?reg=iz&loc=uk']) ?></li>
             <li><?= Html::a('Измаил (ru)', ['course-polish/index?reg=iz&loc=ru']) ?></li>
-            <li><?= Html::a('Одесса (uk)', ['course-polish/index?reg=od&loc=uk']) ?></li>
+            <li><?= Html::a('Одеса (uk)', ['course-polish/index?reg=od&loc=uk']) ?></li>
             <li><?= Html::a('Одесса (ru)', ['course-polish/index?reg=od&loc=ru']) ?></li>
             <li><?= Html::a('Біла Церква (uk)', ['course-polish/index?reg=bc&loc=uk']) ?></li>
             <li><?= Html::a('Белая Церковь (ru)', ['course-polish/index?reg=bc&loc=ru']) ?></li>
             <li><?= Html::a('Cлов\'янськ (uk)', ['course-polish/index?reg=sl&loc=uk']) ?></li>
-            <li><?= Html::a('Славянск (uk)', ['course-polish/index?reg=sl&loc=uk']) ?></li>
+            <li><?= Html::a('Славянск (ru)', ['course-polish/index?reg=sl&loc=ru']) ?></li>
         </ul>
     </div>
 </header>
