@@ -323,4 +323,79 @@ $(document).ready(function () {
         return false;
     });
 
+    $('[id="QuestionForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-question',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+    $('[id="GettingFifthForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-getting-fifth',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
+    $('[id="FooterForm"]').on('beforeSubmit',function () {
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url:'/admin/admin-course-polish/save-footer',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+
 })

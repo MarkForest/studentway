@@ -20,6 +20,7 @@ class AdminAsset extends AssetBundle
     public $css = [
         'css/style.css',
         'css/site.css',
+        'css/simple-line-icons.css',
     ];
     public $js = [
         'js/sendForms.js',

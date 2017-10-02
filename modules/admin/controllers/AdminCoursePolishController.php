@@ -35,12 +35,15 @@ use app\models\Services;
 use app\models\Tariffs;
 use app\models\Team;
 use app\modules\admin\models\AssuranceForm;
+use app\modules\admin\models\FooterForm;
+use app\modules\admin\models\GettingFifthForm;
 use app\modules\admin\models\GettingFourthForm;
 use app\modules\admin\models\GettingSecondForm;
 use app\modules\admin\models\GettingThirdForm;
 use app\modules\admin\models\HomeForm;
 use app\modules\admin\models\PrivilegeForm;
 use app\modules\admin\models\GettingFirstForm;
+use app\modules\admin\models\QuestionForm;
 use app\modules\admin\models\ServicesForm;
 use app\modules\admin\models\TariffsForm;
 use app\modules\admin\models\TeamForm;
@@ -142,6 +145,24 @@ class AdminCoursePolishController extends Controller
         }
     }
 
+
+    //    Ajax Question
+    public function actionSaveQuestion(){
+        $question = new QuestionForm();
+        if (Yii::$app->request->isAjax){
+
+            $question->header_title_uk = $_POST['QuestionForm']['header_title_uk'];
+            $question->header_title_ru = $_POST['QuestionForm']['header_title_ru'];
+            $question->disc_uk = $_POST['QuestionForm']['disc_uk'];
+            $question->disc_ru = $_POST['QuestionForm']['disc_ru'];
+            $question->reg = $_POST['QuestionForm']['reg'];
+            $question->listQuestion = $_POST['QuestionForm']['listQuestion'];
+            $question->listListQuestion = $_POST['QuestionForm']['listListQuestion'];
+
+            return ($question->validate()&&$question->saveData());
+        }
+    }
+
     //    Ajax Getting Third
     public function actionSaveGettingThird(){
         $gettingThirdForm = new GettingThirdForm();
@@ -205,6 +226,42 @@ class AdminCoursePolishController extends Controller
             $teamForm->reg = $_POST['TeamForm']['reg'];
             $teamForm->listTeam = $_POST['TeamForm']['listTeam'];
             return ($teamForm->validate() && $teamForm->saveData());
+        }
+    }
+
+    // Ajax Getting fifth
+    public function actionSaveGettingFifth(){
+        $gettingFifthForm  = new GettingFifthForm();
+        if (Yii::$app->request->isAjax){
+            $gettingFifthForm->title_uk = $_POST['GettingFifthForm']['title_uk'];
+            $gettingFifthForm->title_ru = $_POST['GettingFifthForm']['title_ru'];
+            $gettingFifthForm->button_text_uk = $_POST['GettingFifthForm']['button_text_uk'];
+            $gettingFifthForm->button_text_ru = $_POST['GettingFifthForm']['button_text_ru'];
+            $gettingFifthForm->reg = $_POST['GettingFifthForm']['reg'];
+            return ($gettingFifthForm->validate()&&$gettingFifthForm->saveData());
+        }
+    }
+
+
+    public function actionSaveFooter(){
+        $footerForm  = new FooterForm();
+        if (Yii::$app->request->isAjax){
+            $footerForm->aboutus_title_uk = $_POST['FooterForm']['aboutus_title_uk'];
+            $footerForm->aboutus_title_ru = $_POST['FooterForm']['aboutus_title_ru'];
+            $footerForm->about_text_uk = $_POST['FooterForm']['about_text_uk'];
+            $footerForm->about_text_ru = $_POST['FooterForm']['about_text_ru'];
+            $footerForm->copyright_uk = $_POST['FooterForm']['copyright_uk'];
+            $footerForm->copyright_ru = $_POST['FooterForm']['copyright_ru'];
+            $footerForm->address_title_uk = $_POST['FooterForm']['address_title_uk'];
+            $footerForm->address_title_ru = $_POST['FooterForm']['address_title_ru'];
+            $footerForm->address_text_uk = $_POST['FooterForm']['address_text_uk'];
+            $footerForm->address_text_ru = $_POST['FooterForm']['address_text_ru'];
+            $footerForm->phone_number = $_POST['FooterForm']['phone_number'];
+            $footerForm->email = $_POST['FooterForm']['email'];
+            $footerForm->site = $_POST['FooterForm']['site'];
+            $footerForm->reg = $_POST['FooterForm']['reg'];
+
+            return ($footerForm->validate()&&$footerForm->saveData());
         }
     }
 
@@ -287,6 +344,7 @@ class AdminCoursePolishController extends Controller
         $listQuestion = ListQuestion::find()->where(['question_id'=>$question->id])->all();
         $lisListQuestion = [];
         $listModalQuestion = [];
+        $questionForm = new QuestionForm();
 
         foreach ($listQuestion as $list) {
             $lisListQuestion[$list->id] = ListListQuestion::find()->where(['list_question_id'=>$list->id])->all();
@@ -295,12 +353,14 @@ class AdminCoursePolishController extends Controller
 
         //Пятый синий блок
         $gettingFifth = GettingFifth::findOne(['region_key'=>$reg]);
+        $gettingFifthForm = new GettingFifthForm();
 
         //Партнеры
         $partners = Partners::findOne(['id'=>1]);
 
         //Подвал
         $footer = Footer::findOne(['region_key'=>$reg]);
+        $footerForm = new FooterForm();
 
 
 
@@ -343,6 +403,9 @@ class AdminCoursePolishController extends Controller
             'servicesForm'=>$servicesForm,
             'gettingFourthForm'=>$gettingFourthForm,
             'teamForm' => $teamForm,
+            'questionForm'=>$questionForm,
+            'gettingFifthForm'=>$gettingFifthForm,
+            'footerForm'=>$footerForm,
         ]);
     }
 

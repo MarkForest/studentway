@@ -53,6 +53,7 @@ class Privilege extends \yii\db\ActiveRecord
             'title_list_uk' => 'Title List Uk',
             'title_list_ru' => 'Title List Ru',
             'region_key' => 'Region Key',
+            'image'=>'Image',
         ];
     }
 

@@ -22,6 +22,7 @@ AdminAsset::register($this);
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
+        <link rel="shortcut icon" href="<?php echo Yii::$app->request->baseUrl; ?>/favicon.ico" type="image/x-icon" />
     </head>
     <body>
     <?php $this->beginBody() ?>
@@ -44,7 +45,7 @@ AdminAsset::register($this);
                 ['label' => 'Главная', 'url' => ['/admin/default/index']],
                 ['label' => 'Курсы Польского', 'url' => ['/admin/admin-course-polish/index']],
                 ['label' => 'Институты', 'url' => ['/admin/institutes/index']],
-                ['label' => 'Перейти на сайт', 'url' => ['/site/index']],
+                ['label' => 'Изображения', 'url' => ['/admin/images/index']],
 
                 Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]

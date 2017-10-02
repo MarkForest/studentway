@@ -226,7 +226,7 @@ body{
 
 
 .save-container{
-    /*width: 100%;*/
+    width: 100%;
     border-top: 1px solid red;
     margin-bottom: 40px;
 }
@@ -260,3 +260,89 @@ body{
     font-size: 16px;
 }
 
+.box-faq .nav-tabs li, .mt .nav-tabs li,#fh5co-footer .contact-info .nav-tabs li {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.box-faq{
+    max-height: 500px;
+}
+
+.fh5co-faq,#fh5co-explore .explore-bg,#fh5co-pricing{
+    background: rgba(241, 241, 241,0.7);
+    padding-top: 30px;
+}
+.fh5co-pricing{
+    padding: 0;
+}
+
+
+#fh5co-faq, #fh5co-team,.fh5co-explore,.fh5co-pricing,#fh5co-services{
+    padding-bottom: 0;
+}
+
+.box-faq .form-group{
+    margin-bottom: 0;
+}
+
+#fh5co-team, .fh5co-pricing{
+    background: none;
+}
+
+#fh5co-team,.fh5co-services{
+    background: rgba(241, 241, 241,0.7);
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.call-to-action > a
+{
+    display: block;
+    width: 30%;
+}
+
+.cell-to-get>a{
+    width: 100%;
+}
+
+.save-container{
+    background: none;
+}
+
+#fh5co-footer .footer-text .textarea{
+    font-size: 16px;
+}
+
+#photo-page{
+    margin-top: 100px;
+}
+
+#photo-page a{
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+#photo-page h2{
+    color: #030366;
+}
+#photo-page .thumbnail p{
+    font-size: 13px;
+    font-style: italic;
+}
+
+#photo-page .thumbnail img{
+    height: 200px;
+}
+
+input[type="file"]{
+    font-size: 12px;
+    width: 100%;
+}
+
+.help-block{
+    font-size: 12px;
+}

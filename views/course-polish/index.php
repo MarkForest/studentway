@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+$this->title='Polish|StudentWay';
 \yii\helpers\Url::remember();
 ?>
 <header role="banner" id="fh5co-header">
@@ -136,7 +136,7 @@ use yii\widgets\ActiveForm;
                     </div>
                 </div>
                 <div class="col-md-8 to-animate-2">
-                    <img class="img-responsive" src="/images/explore.png" alt="work">
+                    <img class="img-responsive" src="/images/<?=$privilege->image?>" alt="work">
                 </div>
             </div>
         </div>
